@@ -1,0 +1,3225 @@
+2016-12-28 23:39:39 [-][-][-][error][yii\base\InvalidConfigException] exception 'yii\base\InvalidConfigException' with message 'Migration failed. Directory specified in migrationPath doesn't exist: @vendor/nanson/yii2-messenger/migrations/' in /var/www/basic/vendor/yiisoft/yii2/console/controllers/BaseMigrateController.php:103
+Stack trace:
+#0 /var/www/basic/vendor/yiisoft/yii2/console/controllers/MigrateController.php(168): yii\console\controllers\BaseMigrateController->beforeAction(Object(yii\base\InlineAction))
+#1 /var/www/basic/vendor/yiisoft/yii2/base/Controller.php(152): yii\console\controllers\MigrateController->beforeAction(Object(yii\base\InlineAction))
+#2 /var/www/basic/vendor/yiisoft/yii2/console/Controller.php(128): yii\base\Controller->runAction('', Array)
+#3 /var/www/basic/vendor/yiisoft/yii2/base/Module.php(454): yii\console\Controller->runAction('', Array)
+#4 /var/www/basic/vendor/yiisoft/yii2/console/Application.php(180): yii\base\Module->runAction('migrate', Array)
+#5 /var/www/basic/vendor/yiisoft/yii2/console/Application.php(147): yii\console\Application->runAction('migrate', Array)
+#6 /var/www/basic/vendor/yiisoft/yii2/base/Application.php(375): yii\console\Application->handleRequest(Object(yii\console\Request))
+#7 /var/www/basic/yii(20): yii\base\Application->run()
+#8 {main}
+2016-12-28 23:39:39 [-][-][-][info][application] $_SERVER = [
+    'LC_PAPER' => 'ru_UA.UTF-8'
+    'XDG_VTNR' => '8'
+    'XDG_SESSION_ID' => 'c2'
+    'LC_ADDRESS' => 'ru_UA.UTF-8'
+    'LC_MONETARY' => 'ru_UA.UTF-8'
+    'SHELL' => '/bin/bash'
+    'VTE_VERSION' => '3409'
+    'TERM' => 'xterm'
+    'LC_NUMERIC' => 'ru_UA.UTF-8'
+    'WINDOWID' => '65011720'
+    'PKEXEC_UID' => '1000'
+    'USER' => 'root'
+    'LS_COLORS' => 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arj=01;31:*.taz=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.zip=01;31:*.z=01;31:*.Z=01;31:*.dz=01;31:*.gz=01;31:*.lz=01;31:*.xz=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.jpg=01;35:*.jpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.axv=01;35:*.anx=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.axa=00;36:*.oga=00;36:*.spx=00;36:*.xspf=00;36:'
+    'LC_TELEPHONE' => 'ru_UA.UTF-8'
+    'INSIDE_NEMO_PYTHON' => ''
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games'
+    'LC_IDENTIFICATION' => 'ru_UA.UTF-8'
+    'PWD' => '/var/www/basic'
+    'LANG' => 'ru_UA.UTF-8'
+    'LC_MEASUREMENT' => 'ru_UA.UTF-8'
+    'SHLVL' => '1'
+    'XDG_SEAT' => 'seat0'
+    'HOME' => '/root'
+    'LANGUAGE' => 'ru_UA:ru'
+    'LOGNAME' => 'root'
+    'LESSOPEN' => '| /usr/bin/lesspipe %s'
+    'DISPLAY' => ':0'
+    'LESSCLOSE' => '/usr/bin/lesspipe %s %s'
+    'LC_TIME' => 'ru_UA.UTF-8'
+    'XAUTHORITY' => '/home/stain/.Xauthority'
+    'LC_NAME' => 'ru_UA.UTF-8'
+    'COLORTERM' => 'gnome-terminal'
+    '_' => './yii'
+    'PHP_SELF' => './yii'
+    'SCRIPT_NAME' => './yii'
+    'SCRIPT_FILENAME' => './yii'
+    'PATH_TRANSLATED' => './yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1482968379.2419
+    'REQUEST_TIME' => 1482968379
+    'argv' => [
+        0 => './yii'
+        1 => 'migrate'
+        2 => '--migrationPath=@vendor/nanson/yii2-messenger/migrations/'
+    ]
+    'argc' => 3
+]
+2016-12-28 23:45:35 [-][-][-][error][yii\base\InvalidConfigException] exception 'yii\base\InvalidConfigException' with message 'Migration failed. Directory specified in migrationPath doesn't exist: @vendor/nanson/yii2-messenger/migrations/' in /var/www/basic/vendor/yiisoft/yii2/console/controllers/BaseMigrateController.php:103
+Stack trace:
+#0 /var/www/basic/vendor/yiisoft/yii2/console/controllers/MigrateController.php(168): yii\console\controllers\BaseMigrateController->beforeAction(Object(yii\base\InlineAction))
+#1 /var/www/basic/vendor/yiisoft/yii2/base/Controller.php(152): yii\console\controllers\MigrateController->beforeAction(Object(yii\base\InlineAction))
+#2 /var/www/basic/vendor/yiisoft/yii2/console/Controller.php(128): yii\base\Controller->runAction('', Array)
+#3 /var/www/basic/vendor/yiisoft/yii2/base/Module.php(454): yii\console\Controller->runAction('', Array)
+#4 /var/www/basic/vendor/yiisoft/yii2/console/Application.php(180): yii\base\Module->runAction('migrate', Array)
+#5 /var/www/basic/vendor/yiisoft/yii2/console/Application.php(147): yii\console\Application->runAction('migrate', Array)
+#6 /var/www/basic/vendor/yiisoft/yii2/base/Application.php(375): yii\console\Application->handleRequest(Object(yii\console\Request))
+#7 /var/www/basic/yii(20): yii\base\Application->run()
+#8 {main}
+2016-12-28 23:45:35 [-][-][-][info][application] $_SERVER = [
+    'LC_PAPER' => 'ru_UA.UTF-8'
+    'XDG_VTNR' => '8'
+    'XDG_SESSION_ID' => 'c2'
+    'LC_ADDRESS' => 'ru_UA.UTF-8'
+    'LC_MONETARY' => 'ru_UA.UTF-8'
+    'SHELL' => '/bin/bash'
+    'VTE_VERSION' => '3409'
+    'TERM' => 'xterm'
+    'LC_NUMERIC' => 'ru_UA.UTF-8'
+    'WINDOWID' => '65011720'
+    'PKEXEC_UID' => '1000'
+    'USER' => 'root'
+    'LS_COLORS' => 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arj=01;31:*.taz=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.zip=01;31:*.z=01;31:*.Z=01;31:*.dz=01;31:*.gz=01;31:*.lz=01;31:*.xz=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.jpg=01;35:*.jpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.axv=01;35:*.anx=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.axa=00;36:*.oga=00;36:*.spx=00;36:*.xspf=00;36:'
+    'LC_TELEPHONE' => 'ru_UA.UTF-8'
+    'INSIDE_NEMO_PYTHON' => ''
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games'
+    'LC_IDENTIFICATION' => 'ru_UA.UTF-8'
+    'PWD' => '/var/www/basic'
+    'LANG' => 'ru_UA.UTF-8'
+    'LC_MEASUREMENT' => 'ru_UA.UTF-8'
+    'SHLVL' => '1'
+    'XDG_SEAT' => 'seat0'
+    'HOME' => '/root'
+    'LANGUAGE' => 'ru_UA:ru'
+    'LOGNAME' => 'root'
+    'LESSOPEN' => '| /usr/bin/lesspipe %s'
+    'DISPLAY' => ':0'
+    'LESSCLOSE' => '/usr/bin/lesspipe %s %s'
+    'LC_TIME' => 'ru_UA.UTF-8'
+    'XAUTHORITY' => '/home/stain/.Xauthority'
+    'LC_NAME' => 'ru_UA.UTF-8'
+    'COLORTERM' => 'gnome-terminal'
+    '_' => './yii'
+    'PHP_SELF' => './yii'
+    'SCRIPT_NAME' => './yii'
+    'SCRIPT_FILENAME' => './yii'
+    'PATH_TRANSLATED' => './yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1482968735.5432
+    'REQUEST_TIME' => 1482968735
+    'argv' => [
+        0 => './yii'
+        1 => 'migrate'
+        2 => '--migrationPath=@vendor/nanson/yii2-messenger/migrations/'
+    ]
+    'argc' => 3
+]
+2016-12-28 23:45:55 [-][-][-][error][yii\base\InvalidConfigException] exception 'yii\base\InvalidConfigException' with message 'Migration failed. Directory specified in migrationPath doesn't exist: @vendor/nanson/yii2-messenger/migrations/' in /var/www/basic/vendor/yiisoft/yii2/console/controllers/BaseMigrateController.php:103
+Stack trace:
+#0 /var/www/basic/vendor/yiisoft/yii2/console/controllers/MigrateController.php(168): yii\console\controllers\BaseMigrateController->beforeAction(Object(yii\base\InlineAction))
+#1 /var/www/basic/vendor/yiisoft/yii2/base/Controller.php(152): yii\console\controllers\MigrateController->beforeAction(Object(yii\base\InlineAction))
+#2 /var/www/basic/vendor/yiisoft/yii2/console/Controller.php(128): yii\base\Controller->runAction('', Array)
+#3 /var/www/basic/vendor/yiisoft/yii2/base/Module.php(454): yii\console\Controller->runAction('', Array)
+#4 /var/www/basic/vendor/yiisoft/yii2/console/Application.php(180): yii\base\Module->runAction('migrate', Array)
+#5 /var/www/basic/vendor/yiisoft/yii2/console/Application.php(147): yii\console\Application->runAction('migrate', Array)
+#6 /var/www/basic/vendor/yiisoft/yii2/base/Application.php(375): yii\console\Application->handleRequest(Object(yii\console\Request))
+#7 /var/www/basic/yii(20): yii\base\Application->run()
+#8 {main}
+2016-12-28 23:45:55 [-][-][-][info][application] $_SERVER = [
+    'LC_PAPER' => 'ru_UA.UTF-8'
+    'XDG_VTNR' => '8'
+    'XDG_SESSION_ID' => 'c2'
+    'LC_ADDRESS' => 'ru_UA.UTF-8'
+    'LC_MONETARY' => 'ru_UA.UTF-8'
+    'SHELL' => '/bin/bash'
+    'VTE_VERSION' => '3409'
+    'TERM' => 'xterm'
+    'LC_NUMERIC' => 'ru_UA.UTF-8'
+    'WINDOWID' => '65011720'
+    'PKEXEC_UID' => '1000'
+    'USER' => 'root'
+    'LS_COLORS' => 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arj=01;31:*.taz=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.zip=01;31:*.z=01;31:*.Z=01;31:*.dz=01;31:*.gz=01;31:*.lz=01;31:*.xz=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.jpg=01;35:*.jpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.axv=01;35:*.anx=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.axa=00;36:*.oga=00;36:*.spx=00;36:*.xspf=00;36:'
+    'LC_TELEPHONE' => 'ru_UA.UTF-8'
+    'INSIDE_NEMO_PYTHON' => ''
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games'
+    'LC_IDENTIFICATION' => 'ru_UA.UTF-8'
+    'PWD' => '/var/www/basic'
+    'LANG' => 'ru_UA.UTF-8'
+    'LC_MEASUREMENT' => 'ru_UA.UTF-8'
+    'SHLVL' => '1'
+    'XDG_SEAT' => 'seat0'
+    'HOME' => '/root'
+    'LANGUAGE' => 'ru_UA:ru'
+    'LOGNAME' => 'root'
+    'LESSOPEN' => '| /usr/bin/lesspipe %s'
+    'DISPLAY' => ':0'
+    'LESSCLOSE' => '/usr/bin/lesspipe %s %s'
+    'LC_TIME' => 'ru_UA.UTF-8'
+    'XAUTHORITY' => '/home/stain/.Xauthority'
+    'LC_NAME' => 'ru_UA.UTF-8'
+    'COLORTERM' => 'gnome-terminal'
+    '_' => './yii'
+    'PHP_SELF' => './yii'
+    'SCRIPT_NAME' => './yii'
+    'SCRIPT_FILENAME' => './yii'
+    'PATH_TRANSLATED' => './yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1482968755.1562
+    'REQUEST_TIME' => 1482968755
+    'argv' => [
+        0 => './yii'
+        1 => 'migrate'
+        2 => '--migrationPath=@vendor/nanson/yii2-messenger/migrations/'
+    ]
+    'argc' => 3
+]
+2016-12-29 02:11:08 [-][-][-][error][yii\base\InvalidConfigException] exception 'yii\base\InvalidConfigException' with message 'Migration failed. Directory specified in migrationPath doesn't exist: @app/migrations' in /var/www/basic/vendor/yiisoft/yii2/console/controllers/BaseMigrateController.php:103
+Stack trace:
+#0 /var/www/basic/vendor/yiisoft/yii2/console/controllers/MigrateController.php(168): yii\console\controllers\BaseMigrateController->beforeAction(Object(yii\base\InlineAction))
+#1 /var/www/basic/vendor/yiisoft/yii2/base/Controller.php(152): yii\console\controllers\MigrateController->beforeAction(Object(yii\base\InlineAction))
+#2 /var/www/basic/vendor/yiisoft/yii2/console/Controller.php(128): yii\base\Controller->runAction('', Array)
+#3 /var/www/basic/vendor/yiisoft/yii2/base/Module.php(454): yii\console\Controller->runAction('', Array)
+#4 /var/www/basic/vendor/yiisoft/yii2/console/Application.php(180): yii\base\Module->runAction('migrate', Array)
+#5 /var/www/basic/vendor/yiisoft/yii2/console/Application.php(147): yii\console\Application->runAction('migrate', Array)
+#6 /var/www/basic/vendor/yiisoft/yii2/base/Application.php(375): yii\console\Application->handleRequest(Object(yii\console\Request))
+#7 /var/www/basic/yii(20): yii\base\Application->run()
+#8 {main}
+2016-12-29 02:11:07 [-][-][-][info][application] $_SERVER = [
+    'LC_PAPER' => 'ru_UA.UTF-8'
+    'XDG_VTNR' => '8'
+    'XDG_SESSION_ID' => 'c2'
+    'LC_ADDRESS' => 'ru_UA.UTF-8'
+    'LC_MONETARY' => 'ru_UA.UTF-8'
+    'SHELL' => '/bin/bash'
+    'VTE_VERSION' => '3409'
+    'TERM' => 'xterm'
+    'LC_NUMERIC' => 'ru_UA.UTF-8'
+    'WINDOWID' => '79691784'
+    'PKEXEC_UID' => '1000'
+    'USER' => 'root'
+    'LS_COLORS' => 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arj=01;31:*.taz=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.zip=01;31:*.z=01;31:*.Z=01;31:*.dz=01;31:*.gz=01;31:*.lz=01;31:*.xz=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.jpg=01;35:*.jpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.axv=01;35:*.anx=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.axa=00;36:*.oga=00;36:*.spx=00;36:*.xspf=00;36:'
+    'LC_TELEPHONE' => 'ru_UA.UTF-8'
+    'INSIDE_NEMO_PYTHON' => ''
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games'
+    'LC_IDENTIFICATION' => 'ru_UA.UTF-8'
+    'PWD' => '/var/www/basic'
+    'LANG' => 'ru_UA.UTF-8'
+    'LC_MEASUREMENT' => 'ru_UA.UTF-8'
+    'SHLVL' => '1'
+    'XDG_SEAT' => 'seat0'
+    'HOME' => '/root'
+    'LANGUAGE' => 'ru_UA:ru'
+    'LOGNAME' => 'root'
+    'LESSOPEN' => '| /usr/bin/lesspipe %s'
+    'DISPLAY' => ':0'
+    'LESSCLOSE' => '/usr/bin/lesspipe %s %s'
+    'LC_TIME' => 'ru_UA.UTF-8'
+    'XAUTHORITY' => '/home/stain/.Xauthority'
+    'LC_NAME' => 'ru_UA.UTF-8'
+    'COLORTERM' => 'gnome-terminal'
+    '_' => '/usr/bin/php'
+    'PHP_SELF' => 'yii'
+    'SCRIPT_NAME' => 'yii'
+    'SCRIPT_FILENAME' => 'yii'
+    'PATH_TRANSLATED' => 'yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1482977467.3929
+    'REQUEST_TIME' => 1482977467
+    'argv' => [
+        0 => 'yii'
+        1 => 'migrate'
+        2 => 'create'
+        3 => 'create_users_table'
+    ]
+    'argc' => 4
+]
+2016-12-29 02:23:46 [-][-][-][error][yii\base\InvalidConfigException] exception 'yii\base\InvalidConfigException' with message 'Migration failed. Directory specified in migrationPath doesn't exist: @app/migrations' in /var/www/basic/vendor/yiisoft/yii2/console/controllers/BaseMigrateController.php:103
+Stack trace:
+#0 /var/www/basic/vendor/yiisoft/yii2/console/controllers/MigrateController.php(168): yii\console\controllers\BaseMigrateController->beforeAction(Object(yii\base\InlineAction))
+#1 /var/www/basic/vendor/yiisoft/yii2/base/Controller.php(152): yii\console\controllers\MigrateController->beforeAction(Object(yii\base\InlineAction))
+#2 /var/www/basic/vendor/yiisoft/yii2/console/Controller.php(128): yii\base\Controller->runAction('', Array)
+#3 /var/www/basic/vendor/yiisoft/yii2/base/Module.php(454): yii\console\Controller->runAction('', Array)
+#4 /var/www/basic/vendor/yiisoft/yii2/console/Application.php(180): yii\base\Module->runAction('migrate', Array)
+#5 /var/www/basic/vendor/yiisoft/yii2/console/Application.php(147): yii\console\Application->runAction('migrate', Array)
+#6 /var/www/basic/vendor/yiisoft/yii2/base/Application.php(375): yii\console\Application->handleRequest(Object(yii\console\Request))
+#7 /var/www/basic/yii(20): yii\base\Application->run()
+#8 {main}
+2016-12-29 02:23:46 [-][-][-][info][application] $_SERVER = [
+    'LC_PAPER' => 'ru_UA.UTF-8'
+    'XDG_VTNR' => '8'
+    'XDG_SESSION_ID' => 'c2'
+    'LC_ADDRESS' => 'ru_UA.UTF-8'
+    'LC_MONETARY' => 'ru_UA.UTF-8'
+    'SHELL' => '/bin/bash'
+    'VTE_VERSION' => '3409'
+    'TERM' => 'xterm'
+    'LC_NUMERIC' => 'ru_UA.UTF-8'
+    'WINDOWID' => '79691784'
+    'PKEXEC_UID' => '1000'
+    'USER' => 'root'
+    'LS_COLORS' => 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arj=01;31:*.taz=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.zip=01;31:*.z=01;31:*.Z=01;31:*.dz=01;31:*.gz=01;31:*.lz=01;31:*.xz=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.jpg=01;35:*.jpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.axv=01;35:*.anx=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.axa=00;36:*.oga=00;36:*.spx=00;36:*.xspf=00;36:'
+    'LC_TELEPHONE' => 'ru_UA.UTF-8'
+    'INSIDE_NEMO_PYTHON' => ''
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games'
+    'LC_IDENTIFICATION' => 'ru_UA.UTF-8'
+    'PWD' => '/var/www/basic'
+    'LANG' => 'ru_UA.UTF-8'
+    'LC_MEASUREMENT' => 'ru_UA.UTF-8'
+    'SHLVL' => '1'
+    'XDG_SEAT' => 'seat0'
+    'HOME' => '/root'
+    'LANGUAGE' => 'ru_UA:ru'
+    'LOGNAME' => 'root'
+    'LESSOPEN' => '| /usr/bin/lesspipe %s'
+    'DISPLAY' => ':0'
+    'LESSCLOSE' => '/usr/bin/lesspipe %s %s'
+    'LC_TIME' => 'ru_UA.UTF-8'
+    'XAUTHORITY' => '/home/stain/.Xauthority'
+    'LC_NAME' => 'ru_UA.UTF-8'
+    'COLORTERM' => 'gnome-terminal'
+    '_' => '/usr/bin/php'
+    'PHP_SELF' => 'yii'
+    'SCRIPT_NAME' => 'yii'
+    'SCRIPT_FILENAME' => 'yii'
+    'PATH_TRANSLATED' => 'yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1482978225.8313
+    'REQUEST_TIME' => 1482978225
+    'argv' => [
+        0 => 'yii'
+        1 => 'migrate'
+        2 => 'create'
+        3 => 'create_users_table'
+    ]
+    'argc' => 4
+]
+2016-12-29 02:53:51 [127.0.0.1][100][3kbu3ad5aacvor4i9tlf1r33b1][error][yii\web\HttpException:404] exception 'yii\web\NotFoundHttpException' with message 'Code file not found: c29af59c386ddbb1fa95e32b70eb4391' in /var/www/basic/vendor/yiisoft/yii2-gii/controllers/DefaultController.php:79
+Stack trace:
+#0 [internal function]: yii\gii\controllers\DefaultController->actionPreview('model', 'c29af59c386ddbb...')
+#1 /var/www/basic/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#2 /var/www/basic/vendor/yiisoft/yii2/base/Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#3 /var/www/basic/vendor/yiisoft/yii2/base/Module.php(454): yii\base\Controller->runAction('preview', Array)
+#4 /var/www/basic/vendor/yiisoft/yii2/web/Application.php(100): yii\base\Module->runAction('gii/default/pre...', Array)
+#5 /var/www/basic/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#6 /var/www/basic/web/index.php(12): yii\base\Application->run()
+#7 {main}
+2016-12-29 02:53:51 [127.0.0.1][100][3kbu3ad5aacvor4i9tlf1r33b1][info][application] $_GET = [
+    'r' => 'gii/default/preview'
+    'id' => 'model'
+    'file' => 'c29af59c386ddbb1fa95e32b70eb4391'
+]
+
+$_COOKIE = [
+    '_csrf' => '37d63552840fe45e43ff75f927bb0ae63fcb765100edff45006a600f582d426ea:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"dJOH0d_nOq6tw5eb8dRpORBLtIXe6T6N\";}'
+    'PHPSESSID' => '3kbu3ad5aacvor4i9tlf1r33b1'
+    '_identity' => '220cd327684a90e0bfd949516058f897dc67405cf42c51f65d305389a0716bbfa:2:{i:0;s:9:\"_identity\";i:1;s:28:\"[\"100\",\"test100key\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => '100'
+    '__captcha/site/captcha' => 'ecbsha'
+    '__captcha/site/captchacount' => 1
+]
+
+$_SERVER = [
+    'HTTP_HOST' => '127.0.0.1'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://127.0.0.1/basic/web/index.php?r=gii%2Fdefault%2Fview&id=model'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => '_csrf=37d63552840fe45e43ff75f927bb0ae63fcb765100edff45006a600f582d426ea%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22dJOH0d_nOq6tw5eb8dRpORBLtIXe6T6N%22%3B%7D; PHPSESSID=3kbu3ad5aacvor4i9tlf1r33b1; _identity=220cd327684a90e0bfd949516058f897dc67405cf42c51f65d305389a0716bbfa%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A28%3A%22%5B%22100%22%2C%22test100key%22%2C2592000%5D%22%3B%7D'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Ubuntu) Server at 127.0.0.1 Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
+    'SERVER_NAME' => '127.0.0.1'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/basic/web/index.php'
+    'REMOTE_PORT' => '34384'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=gii%2Fdefault%2Fpreview&id=model&file=c29af59c386ddbb1fa95e32b70eb4391'
+    'REQUEST_URI' => '/basic/web/index.php?r=gii%2Fdefault%2Fpreview&id=model&file=c29af59c386ddbb1fa95e32b70eb4391'
+    'SCRIPT_NAME' => '/basic/web/index.php'
+    'PHP_SELF' => '/basic/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1482980031.373
+    'REQUEST_TIME' => 1482980031
+]
+2016-12-29 03:04:19 [127.0.0.1][100][3kbu3ad5aacvor4i9tlf1r33b1][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "Messege".' in /var/www/basic/vendor/yiisoft/yii2/base/Module.php:462
+Stack trace:
+#0 /var/www/basic/vendor/yiisoft/yii2/web/Application.php(100): yii\base\Module->runAction('Messege', Array)
+#1 /var/www/basic/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /var/www/basic/web/index.php(12): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in /var/www/basic/vendor/yiisoft/yii2/web/Application.php:112
+Stack trace:
+#0 /var/www/basic/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /var/www/basic/web/index.php(12): yii\base\Application->run()
+#2 {main}
+2016-12-29 03:04:19 [127.0.0.1][100][3kbu3ad5aacvor4i9tlf1r33b1][info][application] $_GET = [
+    'r' => 'Messege'
+]
+
+$_COOKIE = [
+    '_csrf' => '37d63552840fe45e43ff75f927bb0ae63fcb765100edff45006a600f582d426ea:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"dJOH0d_nOq6tw5eb8dRpORBLtIXe6T6N\";}'
+    'PHPSESSID' => '3kbu3ad5aacvor4i9tlf1r33b1'
+    '_identity' => '220cd327684a90e0bfd949516058f897dc67405cf42c51f65d305389a0716bbfa:2:{i:0;s:9:\"_identity\";i:1;s:28:\"[\"100\",\"test100key\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => '100'
+    '__captcha/site/captcha' => 'ecbsha'
+    '__captcha/site/captchacount' => 1
+]
+
+$_SERVER = [
+    'HTTP_HOST' => '127.0.0.1'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => '_csrf=37d63552840fe45e43ff75f927bb0ae63fcb765100edff45006a600f582d426ea%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22dJOH0d_nOq6tw5eb8dRpORBLtIXe6T6N%22%3B%7D; PHPSESSID=3kbu3ad5aacvor4i9tlf1r33b1; _identity=220cd327684a90e0bfd949516058f897dc67405cf42c51f65d305389a0716bbfa%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A28%3A%22%5B%22100%22%2C%22test100key%22%2C2592000%5D%22%3B%7D'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Ubuntu) Server at 127.0.0.1 Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
+    'SERVER_NAME' => '127.0.0.1'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/basic/web/index.php'
+    'REMOTE_PORT' => '34465'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=Messege'
+    'REQUEST_URI' => '/basic/web/index.php?r=Messege'
+    'SCRIPT_NAME' => '/basic/web/index.php'
+    'PHP_SELF' => '/basic/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1482980659.726
+    'REQUEST_TIME' => 1482980659
+]
+2016-12-29 03:22:12 [127.0.0.1][100][3kbu3ad5aacvor4i9tlf1r33b1][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "Messege".' in /var/www/basic/vendor/yiisoft/yii2/base/Module.php:462
+Stack trace:
+#0 /var/www/basic/vendor/yiisoft/yii2/web/Application.php(100): yii\base\Module->runAction('Messege', Array)
+#1 /var/www/basic/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /var/www/basic/web/index.php(12): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in /var/www/basic/vendor/yiisoft/yii2/web/Application.php:112
+Stack trace:
+#0 /var/www/basic/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /var/www/basic/web/index.php(12): yii\base\Application->run()
+#2 {main}
+2016-12-29 03:22:12 [127.0.0.1][100][3kbu3ad5aacvor4i9tlf1r33b1][info][application] $_GET = [
+    'r' => 'Messege'
+]
+
+$_COOKIE = [
+    '_csrf' => '37d63552840fe45e43ff75f927bb0ae63fcb765100edff45006a600f582d426ea:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"dJOH0d_nOq6tw5eb8dRpORBLtIXe6T6N\";}'
+    'PHPSESSID' => '3kbu3ad5aacvor4i9tlf1r33b1'
+    '_identity' => '220cd327684a90e0bfd949516058f897dc67405cf42c51f65d305389a0716bbfa:2:{i:0;s:9:\"_identity\";i:1;s:28:\"[\"100\",\"test100key\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => '100'
+    '__captcha/site/captcha' => 'ecbsha'
+    '__captcha/site/captchacount' => 1
+]
+
+$_SERVER = [
+    'HTTP_HOST' => '127.0.0.1'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => '_csrf=37d63552840fe45e43ff75f927bb0ae63fcb765100edff45006a600f582d426ea%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22dJOH0d_nOq6tw5eb8dRpORBLtIXe6T6N%22%3B%7D; PHPSESSID=3kbu3ad5aacvor4i9tlf1r33b1; _identity=220cd327684a90e0bfd949516058f897dc67405cf42c51f65d305389a0716bbfa%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A28%3A%22%5B%22100%22%2C%22test100key%22%2C2592000%5D%22%3B%7D'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Ubuntu) Server at 127.0.0.1 Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
+    'SERVER_NAME' => '127.0.0.1'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/basic/web/index.php'
+    'REMOTE_PORT' => '34563'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=Messege'
+    'REQUEST_URI' => '/basic/web/index.php?r=Messege'
+    'SCRIPT_NAME' => '/basic/web/index.php'
+    'PHP_SELF' => '/basic/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1482981732.672
+    'REQUEST_TIME' => 1482981732
+]
+2016-12-29 03:34:53 [127.0.0.1][100][3kbu3ad5aacvor4i9tlf1r33b1][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "Messeges".' in /var/www/basic/vendor/yiisoft/yii2/base/Module.php:462
+Stack trace:
+#0 /var/www/basic/vendor/yiisoft/yii2/web/Application.php(100): yii\base\Module->runAction('Messeges', Array)
+#1 /var/www/basic/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /var/www/basic/web/index.php(12): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in /var/www/basic/vendor/yiisoft/yii2/web/Application.php:112
+Stack trace:
+#0 /var/www/basic/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /var/www/basic/web/index.php(12): yii\base\Application->run()
+#2 {main}
+2016-12-29 03:34:53 [127.0.0.1][100][3kbu3ad5aacvor4i9tlf1r33b1][info][application] $_GET = [
+    'r' => 'Messeges'
+]
+
+$_COOKIE = [
+    '_csrf' => '37d63552840fe45e43ff75f927bb0ae63fcb765100edff45006a600f582d426ea:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"dJOH0d_nOq6tw5eb8dRpORBLtIXe6T6N\";}'
+    'PHPSESSID' => '3kbu3ad5aacvor4i9tlf1r33b1'
+    '_identity' => '220cd327684a90e0bfd949516058f897dc67405cf42c51f65d305389a0716bbfa:2:{i:0;s:9:\"_identity\";i:1;s:28:\"[\"100\",\"test100key\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => '100'
+    '__captcha/site/captcha' => 'ecbsha'
+    '__captcha/site/captchacount' => 1
+]
+
+$_SERVER = [
+    'HTTP_HOST' => '127.0.0.1'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => '_csrf=37d63552840fe45e43ff75f927bb0ae63fcb765100edff45006a600f582d426ea%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22dJOH0d_nOq6tw5eb8dRpORBLtIXe6T6N%22%3B%7D; PHPSESSID=3kbu3ad5aacvor4i9tlf1r33b1; _identity=220cd327684a90e0bfd949516058f897dc67405cf42c51f65d305389a0716bbfa%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A28%3A%22%5B%22100%22%2C%22test100key%22%2C2592000%5D%22%3B%7D'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Ubuntu) Server at 127.0.0.1 Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
+    'SERVER_NAME' => '127.0.0.1'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/basic/web/index.php'
+    'REMOTE_PORT' => '34697'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=Messeges'
+    'REQUEST_URI' => '/basic/web/index.php?r=Messeges'
+    'SCRIPT_NAME' => '/basic/web/index.php'
+    'PHP_SELF' => '/basic/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1482982493.502
+    'REQUEST_TIME' => 1482982493
+]
+2016-12-29 04:33:33 [127.0.0.1][-][9fk2n2s6oshabb1a9rdr4k3e10][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "Messeges".' in /var/www/basic/vendor/yiisoft/yii2/base/Module.php:462
+Stack trace:
+#0 /var/www/basic/vendor/yiisoft/yii2/web/Application.php(100): yii\base\Module->runAction('Messeges', Array)
+#1 /var/www/basic/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /var/www/basic/web/index.php(12): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in /var/www/basic/vendor/yiisoft/yii2/web/Application.php:112
+Stack trace:
+#0 /var/www/basic/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /var/www/basic/web/index.php(12): yii\base\Application->run()
+#2 {main}
+2016-12-29 04:33:33 [127.0.0.1][-][9fk2n2s6oshabb1a9rdr4k3e10][info][application] $_GET = [
+    'r' => 'Messeges'
+]
+
+$_COOKIE = [
+    '_csrf' => '37d63552840fe45e43ff75f927bb0ae63fcb765100edff45006a600f582d426ea:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"dJOH0d_nOq6tw5eb8dRpORBLtIXe6T6N\";}'
+    'PHPSESSID' => '9fk2n2s6oshabb1a9rdr4k3e10'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__captcha/site/captcha' => 'buhidm'
+    '__captcha/site/captchacount' => 1
+]
+
+$_SERVER = [
+    'HTTP_HOST' => '127.0.0.1'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => '_csrf=37d63552840fe45e43ff75f927bb0ae63fcb765100edff45006a600f582d426ea%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22dJOH0d_nOq6tw5eb8dRpORBLtIXe6T6N%22%3B%7D; PHPSESSID=9fk2n2s6oshabb1a9rdr4k3e10'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Ubuntu) Server at 127.0.0.1 Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
+    'SERVER_NAME' => '127.0.0.1'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/basic/web/index.php'
+    'REMOTE_PORT' => '35267'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=Messeges'
+    'REQUEST_URI' => '/basic/web/index.php?r=Messeges'
+    'SCRIPT_NAME' => '/basic/web/index.php'
+    'PHP_SELF' => '/basic/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1482986013.161
+    'REQUEST_TIME' => 1482986013
+]
+2016-12-29 05:28:10 [127.0.0.1][-][cv5nvmddq6bvtgfkcfc0ld21l2][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "Messeges".' in /var/www/basic/vendor/yiisoft/yii2/base/Module.php:462
+Stack trace:
+#0 /var/www/basic/vendor/yiisoft/yii2/web/Application.php(100): yii\base\Module->runAction('Messeges', Array)
+#1 /var/www/basic/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /var/www/basic/web/index.php(12): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in /var/www/basic/vendor/yiisoft/yii2/web/Application.php:112
+Stack trace:
+#0 /var/www/basic/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /var/www/basic/web/index.php(12): yii\base\Application->run()
+#2 {main}
+2016-12-29 05:28:10 [127.0.0.1][-][cv5nvmddq6bvtgfkcfc0ld21l2][info][application] $_GET = [
+    'r' => 'Messeges'
+]
+
+$_COOKIE = [
+    '_csrf' => 'cbda376805a9c6ec66b6a596c61195dafee24b331426e5195cce2c6d6dd6c1f5a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"qFZxm5q2FvapC-ydPZukmAxJkYa6-t-T\";}'
+    'PHPSESSID' => 'cv5nvmddq6bvtgfkcfc0ld21l2'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__captcha/site/captcha' => 'eagbte'
+    '__captcha/site/captchacount' => 1
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'apiserver.sv'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => '_csrf=cbda376805a9c6ec66b6a596c61195dafee24b331426e5195cce2c6d6dd6c1f5a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22qFZxm5q2FvapC-ydPZukmAxJkYa6-t-T%22%3B%7D; PHPSESSID=cv5nvmddq6bvtgfkcfc0ld21l2'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Ubuntu) Server at apiserver.sv Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
+    'SERVER_NAME' => 'apiserver.sv'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/basic/web/index.php'
+    'REMOTE_PORT' => '35818'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=Messeges'
+    'REQUEST_URI' => '/basic/web/index.php?r=Messeges'
+    'SCRIPT_NAME' => '/basic/web/index.php'
+    'PHP_SELF' => '/basic/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1482989290.863
+    'REQUEST_TIME' => 1482989290
+]
+2016-12-29 05:28:22 [127.0.0.1][-][cv5nvmddq6bvtgfkcfc0ld21l2][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "messeges".' in /var/www/basic/vendor/yiisoft/yii2/base/Module.php:462
+Stack trace:
+#0 /var/www/basic/vendor/yiisoft/yii2/web/Application.php(100): yii\base\Module->runAction('messeges', Array)
+#1 /var/www/basic/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /var/www/basic/web/index.php(12): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in /var/www/basic/vendor/yiisoft/yii2/web/Application.php:112
+Stack trace:
+#0 /var/www/basic/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /var/www/basic/web/index.php(12): yii\base\Application->run()
+#2 {main}
+2016-12-29 05:28:22 [127.0.0.1][-][cv5nvmddq6bvtgfkcfc0ld21l2][info][application] $_GET = [
+    'r' => 'messeges'
+]
+
+$_COOKIE = [
+    '_csrf' => 'cbda376805a9c6ec66b6a596c61195dafee24b331426e5195cce2c6d6dd6c1f5a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"qFZxm5q2FvapC-ydPZukmAxJkYa6-t-T\";}'
+    'PHPSESSID' => 'cv5nvmddq6bvtgfkcfc0ld21l2'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__captcha/site/captcha' => 'eagbte'
+    '__captcha/site/captchacount' => 1
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'apiserver.sv'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => '_csrf=cbda376805a9c6ec66b6a596c61195dafee24b331426e5195cce2c6d6dd6c1f5a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22qFZxm5q2FvapC-ydPZukmAxJkYa6-t-T%22%3B%7D; PHPSESSID=cv5nvmddq6bvtgfkcfc0ld21l2'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Ubuntu) Server at apiserver.sv Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
+    'SERVER_NAME' => 'apiserver.sv'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/basic/web/index.php'
+    'REMOTE_PORT' => '35828'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=messeges'
+    'REQUEST_URI' => '/basic/web/index.php?r=messeges'
+    'SCRIPT_NAME' => '/basic/web/index.php'
+    'PHP_SELF' => '/basic/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1482989302.929
+    'REQUEST_TIME' => 1482989302
+]
+2016-12-29 05:30:25 [127.0.0.1][-][cv5nvmddq6bvtgfkcfc0ld21l2][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "messeges/index".' in /var/www/basic/vendor/yiisoft/yii2/base/Module.php:462
+Stack trace:
+#0 /var/www/basic/vendor/yiisoft/yii2/web/Application.php(100): yii\base\Module->runAction('messeges/index', Array)
+#1 /var/www/basic/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /var/www/basic/web/index.php(12): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in /var/www/basic/vendor/yiisoft/yii2/web/Application.php:112
+Stack trace:
+#0 /var/www/basic/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /var/www/basic/web/index.php(12): yii\base\Application->run()
+#2 {main}
+2016-12-29 05:30:25 [127.0.0.1][-][cv5nvmddq6bvtgfkcfc0ld21l2][info][application] $_GET = [
+    'r' => 'messeges/index'
+]
+
+$_COOKIE = [
+    '_csrf' => 'cbda376805a9c6ec66b6a596c61195dafee24b331426e5195cce2c6d6dd6c1f5a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"qFZxm5q2FvapC-ydPZukmAxJkYa6-t-T\";}'
+    'PHPSESSID' => 'cv5nvmddq6bvtgfkcfc0ld21l2'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__captcha/site/captcha' => 'eagbte'
+    '__captcha/site/captchacount' => 1
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'apiserver.sv'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => '_csrf=cbda376805a9c6ec66b6a596c61195dafee24b331426e5195cce2c6d6dd6c1f5a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22qFZxm5q2FvapC-ydPZukmAxJkYa6-t-T%22%3B%7D; PHPSESSID=cv5nvmddq6bvtgfkcfc0ld21l2'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Ubuntu) Server at apiserver.sv Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
+    'SERVER_NAME' => 'apiserver.sv'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/basic/web/index.php'
+    'REMOTE_PORT' => '35842'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=messeges%2Findex'
+    'REQUEST_URI' => '/basic/web/index.php?r=messeges%2Findex'
+    'SCRIPT_NAME' => '/basic/web/index.php'
+    'PHP_SELF' => '/basic/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1482989425.044
+    'REQUEST_TIME' => 1482989425
+]
+2016-12-29 05:30:31 [127.0.0.1][-][-][error][yii\base\ViewNotFoundException] exception 'yii\base\ViewNotFoundException' with message 'The view file does not exist: /var/www/basic/views/messege/index.php' in /var/www/basic/vendor/yiisoft/yii2/base/View.php:227
+Stack trace:
+#0 /var/www/basic/vendor/yiisoft/yii2/base/View.php(150): yii\base\View->renderFile('/var/www/basic/...', Array, Object(app\controllers\MessegeController))
+#1 /var/www/basic/vendor/yiisoft/yii2/base/Controller.php(378): yii\base\View->render('index', Array, Object(app\controllers\MessegeController))
+#2 /var/www/basic/controllers/MessegeController.php(44): yii\base\Controller->render('index', Array)
+#3 [internal function]: app\controllers\MessegeController->actionIndex()
+#4 /var/www/basic/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#5 /var/www/basic/vendor/yiisoft/yii2/base/Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#6 /var/www/basic/vendor/yiisoft/yii2/base/Module.php(454): yii\base\Controller->runAction('index', Array)
+#7 /var/www/basic/vendor/yiisoft/yii2/web/Application.php(100): yii\base\Module->runAction('messege/index', Array)
+#8 /var/www/basic/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#9 /var/www/basic/web/index.php(12): yii\base\Application->run()
+#10 {main}
+2016-12-29 05:30:31 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'messege/index'
+]
+
+$_COOKIE = [
+    '_csrf' => 'cbda376805a9c6ec66b6a596c61195dafee24b331426e5195cce2c6d6dd6c1f5a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"qFZxm5q2FvapC-ydPZukmAxJkYa6-t-T\";}'
+    'PHPSESSID' => 'cv5nvmddq6bvtgfkcfc0ld21l2'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'apiserver.sv'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => '_csrf=cbda376805a9c6ec66b6a596c61195dafee24b331426e5195cce2c6d6dd6c1f5a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22qFZxm5q2FvapC-ydPZukmAxJkYa6-t-T%22%3B%7D; PHPSESSID=cv5nvmddq6bvtgfkcfc0ld21l2'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Ubuntu) Server at apiserver.sv Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
+    'SERVER_NAME' => 'apiserver.sv'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/basic/web/index.php'
+    'REMOTE_PORT' => '35843'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=messege%2Findex'
+    'REQUEST_URI' => '/basic/web/index.php?r=messege%2Findex'
+    'SCRIPT_NAME' => '/basic/web/index.php'
+    'PHP_SELF' => '/basic/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1482989431.407
+    'REQUEST_TIME' => 1482989431
+]
+2016-12-29 05:32:03 [127.0.0.1][-][cv5nvmddq6bvtgfkcfc0ld21l2][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "messeges/index".' in /var/www/basic/vendor/yiisoft/yii2/base/Module.php:462
+Stack trace:
+#0 /var/www/basic/vendor/yiisoft/yii2/web/Application.php(100): yii\base\Module->runAction('messeges/index', Array)
+#1 /var/www/basic/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /var/www/basic/web/index.php(12): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in /var/www/basic/vendor/yiisoft/yii2/web/Application.php:112
+Stack trace:
+#0 /var/www/basic/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /var/www/basic/web/index.php(12): yii\base\Application->run()
+#2 {main}
+2016-12-29 05:32:03 [127.0.0.1][-][cv5nvmddq6bvtgfkcfc0ld21l2][info][application] $_GET = [
+    'r' => 'messeges/index'
+]
+
+$_COOKIE = [
+    '_csrf' => 'cbda376805a9c6ec66b6a596c61195dafee24b331426e5195cce2c6d6dd6c1f5a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"qFZxm5q2FvapC-ydPZukmAxJkYa6-t-T\";}'
+    'PHPSESSID' => 'cv5nvmddq6bvtgfkcfc0ld21l2'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__captcha/site/captcha' => 'eagbte'
+    '__captcha/site/captchacount' => 1
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'apiserver.sv'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => '_csrf=cbda376805a9c6ec66b6a596c61195dafee24b331426e5195cce2c6d6dd6c1f5a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22qFZxm5q2FvapC-ydPZukmAxJkYa6-t-T%22%3B%7D; PHPSESSID=cv5nvmddq6bvtgfkcfc0ld21l2'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Ubuntu) Server at apiserver.sv Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
+    'SERVER_NAME' => 'apiserver.sv'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/basic/web/index.php'
+    'REMOTE_PORT' => '35853'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=messeges%2Findex'
+    'REQUEST_URI' => '/basic/web/index.php?r=messeges%2Findex'
+    'SCRIPT_NAME' => '/basic/web/index.php'
+    'PHP_SELF' => '/basic/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1482989523.522
+    'REQUEST_TIME' => 1482989523
+]
+2016-12-29 05:32:05 [127.0.0.1][-][cv5nvmddq6bvtgfkcfc0ld21l2][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "messeges".' in /var/www/basic/vendor/yiisoft/yii2/base/Module.php:462
+Stack trace:
+#0 /var/www/basic/vendor/yiisoft/yii2/web/Application.php(100): yii\base\Module->runAction('messeges', Array)
+#1 /var/www/basic/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /var/www/basic/web/index.php(12): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in /var/www/basic/vendor/yiisoft/yii2/web/Application.php:112
+Stack trace:
+#0 /var/www/basic/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /var/www/basic/web/index.php(12): yii\base\Application->run()
+#2 {main}
+2016-12-29 05:32:05 [127.0.0.1][-][cv5nvmddq6bvtgfkcfc0ld21l2][info][application] $_GET = [
+    'r' => 'messeges'
+]
+
+$_COOKIE = [
+    '_csrf' => 'cbda376805a9c6ec66b6a596c61195dafee24b331426e5195cce2c6d6dd6c1f5a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"qFZxm5q2FvapC-ydPZukmAxJkYa6-t-T\";}'
+    'PHPSESSID' => 'cv5nvmddq6bvtgfkcfc0ld21l2'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__captcha/site/captcha' => 'eagbte'
+    '__captcha/site/captchacount' => 1
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'apiserver.sv'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => '_csrf=cbda376805a9c6ec66b6a596c61195dafee24b331426e5195cce2c6d6dd6c1f5a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22qFZxm5q2FvapC-ydPZukmAxJkYa6-t-T%22%3B%7D; PHPSESSID=cv5nvmddq6bvtgfkcfc0ld21l2'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Ubuntu) Server at apiserver.sv Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
+    'SERVER_NAME' => 'apiserver.sv'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/basic/web/index.php'
+    'REMOTE_PORT' => '35853'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=messeges'
+    'REQUEST_URI' => '/basic/web/index.php?r=messeges'
+    'SCRIPT_NAME' => '/basic/web/index.php'
+    'PHP_SELF' => '/basic/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1482989525.143
+    'REQUEST_TIME' => 1482989525
+]
+2016-12-29 05:33:04 [127.0.0.1][-][-][error][yii\base\ViewNotFoundException] exception 'yii\base\ViewNotFoundException' with message 'The view file does not exist: /var/www/basic/views/messege/index.php' in /var/www/basic/vendor/yiisoft/yii2/base/View.php:227
+Stack trace:
+#0 /var/www/basic/vendor/yiisoft/yii2/base/View.php(150): yii\base\View->renderFile('/var/www/basic/...', Array, Object(app\controllers\MessegeController))
+#1 /var/www/basic/vendor/yiisoft/yii2/base/Controller.php(378): yii\base\View->render('index', Array, Object(app\controllers\MessegeController))
+#2 /var/www/basic/controllers/MessegeController.php(44): yii\base\Controller->render('index', Array)
+#3 [internal function]: app\controllers\MessegeController->actionIndex()
+#4 /var/www/basic/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#5 /var/www/basic/vendor/yiisoft/yii2/base/Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#6 /var/www/basic/vendor/yiisoft/yii2/base/Module.php(454): yii\base\Controller->runAction('index', Array)
+#7 /var/www/basic/vendor/yiisoft/yii2/web/Application.php(100): yii\base\Module->runAction('messege/index', Array)
+#8 /var/www/basic/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#9 /var/www/basic/web/index.php(12): yii\base\Application->run()
+#10 {main}
+2016-12-29 05:33:03 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'messege/index'
+]
+
+$_COOKIE = [
+    '_csrf' => 'cbda376805a9c6ec66b6a596c61195dafee24b331426e5195cce2c6d6dd6c1f5a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"qFZxm5q2FvapC-ydPZukmAxJkYa6-t-T\";}'
+    'PHPSESSID' => 'cv5nvmddq6bvtgfkcfc0ld21l2'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'apiserver.sv'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => '_csrf=cbda376805a9c6ec66b6a596c61195dafee24b331426e5195cce2c6d6dd6c1f5a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22qFZxm5q2FvapC-ydPZukmAxJkYa6-t-T%22%3B%7D; PHPSESSID=cv5nvmddq6bvtgfkcfc0ld21l2'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Ubuntu) Server at apiserver.sv Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
+    'SERVER_NAME' => 'apiserver.sv'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/basic/web/index.php'
+    'REMOTE_PORT' => '35875'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=messege%2Findex'
+    'REQUEST_URI' => '/basic/web/index.php?r=messege%2Findex'
+    'SCRIPT_NAME' => '/basic/web/index.php'
+    'PHP_SELF' => '/basic/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1482989583.675
+    'REQUEST_TIME' => 1482989583
+]
+2016-12-29 05:33:25 [127.0.0.1][-][cv5nvmddq6bvtgfkcfc0ld21l2][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "Messege/index".' in /var/www/basic/vendor/yiisoft/yii2/base/Module.php:462
+Stack trace:
+#0 /var/www/basic/vendor/yiisoft/yii2/web/Application.php(100): yii\base\Module->runAction('Messege/index', Array)
+#1 /var/www/basic/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /var/www/basic/web/index.php(12): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in /var/www/basic/vendor/yiisoft/yii2/web/Application.php:112
+Stack trace:
+#0 /var/www/basic/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /var/www/basic/web/index.php(12): yii\base\Application->run()
+#2 {main}
+2016-12-29 05:33:25 [127.0.0.1][-][cv5nvmddq6bvtgfkcfc0ld21l2][info][application] $_GET = [
+    'r' => 'Messege/index'
+]
+
+$_COOKIE = [
+    '_csrf' => 'cbda376805a9c6ec66b6a596c61195dafee24b331426e5195cce2c6d6dd6c1f5a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"qFZxm5q2FvapC-ydPZukmAxJkYa6-t-T\";}'
+    'PHPSESSID' => 'cv5nvmddq6bvtgfkcfc0ld21l2'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__captcha/site/captcha' => 'eagbte'
+    '__captcha/site/captchacount' => 1
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'apiserver.sv'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => '_csrf=cbda376805a9c6ec66b6a596c61195dafee24b331426e5195cce2c6d6dd6c1f5a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22qFZxm5q2FvapC-ydPZukmAxJkYa6-t-T%22%3B%7D; PHPSESSID=cv5nvmddq6bvtgfkcfc0ld21l2'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Ubuntu) Server at apiserver.sv Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
+    'SERVER_NAME' => 'apiserver.sv'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/basic/web/index.php'
+    'REMOTE_PORT' => '35884'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=Messege%2Findex'
+    'REQUEST_URI' => '/basic/web/index.php?r=Messege%2Findex'
+    'SCRIPT_NAME' => '/basic/web/index.php'
+    'PHP_SELF' => '/basic/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1482989605.661
+    'REQUEST_TIME' => 1482989605
+]
+2016-12-29 05:33:35 [127.0.0.1][-][-][error][yii\base\ViewNotFoundException] exception 'yii\base\ViewNotFoundException' with message 'The view file does not exist: /var/www/basic/views/messege/index.php' in /var/www/basic/vendor/yiisoft/yii2/base/View.php:227
+Stack trace:
+#0 /var/www/basic/vendor/yiisoft/yii2/base/View.php(150): yii\base\View->renderFile('/var/www/basic/...', Array, Object(app\controllers\MessegeController))
+#1 /var/www/basic/vendor/yiisoft/yii2/base/Controller.php(378): yii\base\View->render('index', Array, Object(app\controllers\MessegeController))
+#2 /var/www/basic/controllers/MessegeController.php(44): yii\base\Controller->render('index', Array)
+#3 [internal function]: app\controllers\MessegeController->actionIndex()
+#4 /var/www/basic/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#5 /var/www/basic/vendor/yiisoft/yii2/base/Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#6 /var/www/basic/vendor/yiisoft/yii2/base/Module.php(454): yii\base\Controller->runAction('index', Array)
+#7 /var/www/basic/vendor/yiisoft/yii2/web/Application.php(100): yii\base\Module->runAction('messege/index', Array)
+#8 /var/www/basic/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#9 /var/www/basic/web/index.php(12): yii\base\Application->run()
+#10 {main}
+2016-12-29 05:33:35 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'messege/index'
+]
+
+$_COOKIE = [
+    '_csrf' => 'cbda376805a9c6ec66b6a596c61195dafee24b331426e5195cce2c6d6dd6c1f5a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"qFZxm5q2FvapC-ydPZukmAxJkYa6-t-T\";}'
+    'PHPSESSID' => 'cv5nvmddq6bvtgfkcfc0ld21l2'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'apiserver.sv'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => '_csrf=cbda376805a9c6ec66b6a596c61195dafee24b331426e5195cce2c6d6dd6c1f5a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22qFZxm5q2FvapC-ydPZukmAxJkYa6-t-T%22%3B%7D; PHPSESSID=cv5nvmddq6bvtgfkcfc0ld21l2'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Ubuntu) Server at apiserver.sv Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
+    'SERVER_NAME' => 'apiserver.sv'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/basic/web/index.php'
+    'REMOTE_PORT' => '35885'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=messege%2Findex'
+    'REQUEST_URI' => '/basic/web/index.php?r=messege%2Findex'
+    'SCRIPT_NAME' => '/basic/web/index.php'
+    'PHP_SELF' => '/basic/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1482989615.121
+    'REQUEST_TIME' => 1482989615
+]
+2016-12-29 05:34:05 [127.0.0.1][-][-][error][yii\base\ViewNotFoundException] exception 'yii\base\ViewNotFoundException' with message 'The view file does not exist: /var/www/basic/views/conv/index.php' in /var/www/basic/vendor/yiisoft/yii2/base/View.php:227
+Stack trace:
+#0 /var/www/basic/vendor/yiisoft/yii2/base/View.php(150): yii\base\View->renderFile('/var/www/basic/...', Array, Object(app\controllers\ConvController))
+#1 /var/www/basic/vendor/yiisoft/yii2/base/Controller.php(378): yii\base\View->render('index', Array, Object(app\controllers\ConvController))
+#2 /var/www/basic/controllers/ConvController.php(44): yii\base\Controller->render('index', Array)
+#3 [internal function]: app\controllers\ConvController->actionIndex()
+#4 /var/www/basic/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#5 /var/www/basic/vendor/yiisoft/yii2/base/Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#6 /var/www/basic/vendor/yiisoft/yii2/base/Module.php(454): yii\base\Controller->runAction('index', Array)
+#7 /var/www/basic/vendor/yiisoft/yii2/web/Application.php(100): yii\base\Module->runAction('conv/index', Array)
+#8 /var/www/basic/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#9 /var/www/basic/web/index.php(12): yii\base\Application->run()
+#10 {main}
+2016-12-29 05:34:05 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'conv/index'
+]
+
+$_COOKIE = [
+    '_csrf' => 'cbda376805a9c6ec66b6a596c61195dafee24b331426e5195cce2c6d6dd6c1f5a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"qFZxm5q2FvapC-ydPZukmAxJkYa6-t-T\";}'
+    'PHPSESSID' => 'cv5nvmddq6bvtgfkcfc0ld21l2'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'apiserver.sv'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => '_csrf=cbda376805a9c6ec66b6a596c61195dafee24b331426e5195cce2c6d6dd6c1f5a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22qFZxm5q2FvapC-ydPZukmAxJkYa6-t-T%22%3B%7D; PHPSESSID=cv5nvmddq6bvtgfkcfc0ld21l2'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Ubuntu) Server at apiserver.sv Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
+    'SERVER_NAME' => 'apiserver.sv'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/basic/web/index.php'
+    'REMOTE_PORT' => '35900'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=conv%2Findex'
+    'REQUEST_URI' => '/basic/web/index.php?r=conv%2Findex'
+    'SCRIPT_NAME' => '/basic/web/index.php'
+    'PHP_SELF' => '/basic/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1482989645.354
+    'REQUEST_TIME' => 1482989645
+]
+2016-12-29 05:34:16 [127.0.0.1][-][-][error][yii\base\ViewNotFoundException] exception 'yii\base\ViewNotFoundException' with message 'The view file does not exist: /var/www/basic/views/users/index.php' in /var/www/basic/vendor/yiisoft/yii2/base/View.php:227
+Stack trace:
+#0 /var/www/basic/vendor/yiisoft/yii2/base/View.php(150): yii\base\View->renderFile('/var/www/basic/...', Array, Object(app\controllers\UsersController))
+#1 /var/www/basic/vendor/yiisoft/yii2/base/Controller.php(378): yii\base\View->render('index', Array, Object(app\controllers\UsersController))
+#2 /var/www/basic/controllers/UsersController.php(44): yii\base\Controller->render('index', Array)
+#3 [internal function]: app\controllers\UsersController->actionIndex()
+#4 /var/www/basic/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#5 /var/www/basic/vendor/yiisoft/yii2/base/Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#6 /var/www/basic/vendor/yiisoft/yii2/base/Module.php(454): yii\base\Controller->runAction('index', Array)
+#7 /var/www/basic/vendor/yiisoft/yii2/web/Application.php(100): yii\base\Module->runAction('users/index', Array)
+#8 /var/www/basic/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#9 /var/www/basic/web/index.php(12): yii\base\Application->run()
+#10 {main}
+2016-12-29 05:34:16 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'users/index'
+]
+
+$_COOKIE = [
+    '_csrf' => 'cbda376805a9c6ec66b6a596c61195dafee24b331426e5195cce2c6d6dd6c1f5a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"qFZxm5q2FvapC-ydPZukmAxJkYa6-t-T\";}'
+    'PHPSESSID' => 'cv5nvmddq6bvtgfkcfc0ld21l2'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'apiserver.sv'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => '_csrf=cbda376805a9c6ec66b6a596c61195dafee24b331426e5195cce2c6d6dd6c1f5a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22qFZxm5q2FvapC-ydPZukmAxJkYa6-t-T%22%3B%7D; PHPSESSID=cv5nvmddq6bvtgfkcfc0ld21l2'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Ubuntu) Server at apiserver.sv Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
+    'SERVER_NAME' => 'apiserver.sv'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/basic/web/index.php'
+    'REMOTE_PORT' => '35908'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=users%2Findex'
+    'REQUEST_URI' => '/basic/web/index.php?r=users%2Findex'
+    'SCRIPT_NAME' => '/basic/web/index.php'
+    'PHP_SELF' => '/basic/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1482989656.135
+    'REQUEST_TIME' => 1482989656
+]
+2016-12-29 05:37:21 [127.0.0.1][-][-][error][yii\base\ViewNotFoundException] exception 'yii\base\ViewNotFoundException' with message 'The view file does not exist: /var/www/basic/views/messege/index.php' in /var/www/basic/vendor/yiisoft/yii2/base/View.php:227
+Stack trace:
+#0 /var/www/basic/vendor/yiisoft/yii2/base/View.php(150): yii\base\View->renderFile('/var/www/basic/...', Array, Object(app\controllers\MessegeController))
+#1 /var/www/basic/vendor/yiisoft/yii2/base/Controller.php(378): yii\base\View->render('index', Array, Object(app\controllers\MessegeController))
+#2 /var/www/basic/controllers/MessegeController.php(44): yii\base\Controller->render('index', Array)
+#3 [internal function]: app\controllers\MessegeController->actionIndex()
+#4 /var/www/basic/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#5 /var/www/basic/vendor/yiisoft/yii2/base/Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#6 /var/www/basic/vendor/yiisoft/yii2/base/Module.php(454): yii\base\Controller->runAction('index', Array)
+#7 /var/www/basic/vendor/yiisoft/yii2/web/Application.php(100): yii\base\Module->runAction('messege/index', Array)
+#8 /var/www/basic/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#9 /var/www/basic/web/index.php(12): yii\base\Application->run()
+#10 {main}
+2016-12-29 05:37:21 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'messege/index'
+]
+
+$_COOKIE = [
+    '_csrf' => 'cbda376805a9c6ec66b6a596c61195dafee24b331426e5195cce2c6d6dd6c1f5a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"qFZxm5q2FvapC-ydPZukmAxJkYa6-t-T\";}'
+    'PHPSESSID' => 'cv5nvmddq6bvtgfkcfc0ld21l2'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'apiserver.sv'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => '_csrf=cbda376805a9c6ec66b6a596c61195dafee24b331426e5195cce2c6d6dd6c1f5a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22qFZxm5q2FvapC-ydPZukmAxJkYa6-t-T%22%3B%7D; PHPSESSID=cv5nvmddq6bvtgfkcfc0ld21l2'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Ubuntu) Server at apiserver.sv Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
+    'SERVER_NAME' => 'apiserver.sv'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/basic/web/index.php'
+    'REMOTE_PORT' => '35940'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=messege%2Findex'
+    'REQUEST_URI' => '/basic/web/index.php?r=messege%2Findex'
+    'SCRIPT_NAME' => '/basic/web/index.php'
+    'PHP_SELF' => '/basic/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1482989841.227
+    'REQUEST_TIME' => 1482989841
+]
+2016-12-29 06:36:20 [127.0.0.1][-][-][error][yii\base\ViewNotFoundException] exception 'yii\base\ViewNotFoundException' with message 'The view file does not exist: /var/www/basic/views/messege/index.php' in /var/www/basic/vendor/yiisoft/yii2/base/View.php:227
+Stack trace:
+#0 /var/www/basic/vendor/yiisoft/yii2/base/View.php(150): yii\base\View->renderFile('/var/www/basic/...', Array, Object(app\controllers\MessegeController))
+#1 /var/www/basic/vendor/yiisoft/yii2/base/Controller.php(378): yii\base\View->render('index', Array, Object(app\controllers\MessegeController))
+#2 /var/www/basic/controllers/MessegeController.php(44): yii\base\Controller->render('index', Array)
+#3 [internal function]: app\controllers\MessegeController->actionIndex()
+#4 /var/www/basic/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#5 /var/www/basic/vendor/yiisoft/yii2/base/Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#6 /var/www/basic/vendor/yiisoft/yii2/base/Module.php(454): yii\base\Controller->runAction('index', Array)
+#7 /var/www/basic/vendor/yiisoft/yii2/web/Application.php(100): yii\base\Module->runAction('messege/index', Array)
+#8 /var/www/basic/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#9 /var/www/basic/web/index.php(12): yii\base\Application->run()
+#10 {main}
+2016-12-29 06:36:20 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'messege/index'
+]
+
+$_COOKIE = [
+    '_csrf' => 'cbda376805a9c6ec66b6a596c61195dafee24b331426e5195cce2c6d6dd6c1f5a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"qFZxm5q2FvapC-ydPZukmAxJkYa6-t-T\";}'
+    'PHPSESSID' => 'cv5nvmddq6bvtgfkcfc0ld21l2'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'apiserver.sv'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => '_csrf=cbda376805a9c6ec66b6a596c61195dafee24b331426e5195cce2c6d6dd6c1f5a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22qFZxm5q2FvapC-ydPZukmAxJkYa6-t-T%22%3B%7D; PHPSESSID=cv5nvmddq6bvtgfkcfc0ld21l2'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Ubuntu) Server at apiserver.sv Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
+    'SERVER_NAME' => 'apiserver.sv'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/basic/web/index.php'
+    'REMOTE_PORT' => '43073'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=messege%2Findex'
+    'REQUEST_URI' => '/basic/web/index.php?r=messege%2Findex'
+    'SCRIPT_NAME' => '/basic/web/index.php'
+    'PHP_SELF' => '/basic/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1482993380.274
+    'REQUEST_TIME' => 1482993380
+]
+2016-12-29 06:45:29 [127.0.0.1][-][-][error][yii\base\ViewNotFoundException] exception 'yii\base\ViewNotFoundException' with message 'The view file does not exist: /var/www/basic/views/messege/index.php' in /var/www/basic/vendor/yiisoft/yii2/base/View.php:227
+Stack trace:
+#0 /var/www/basic/vendor/yiisoft/yii2/base/View.php(150): yii\base\View->renderFile('/var/www/basic/...', Array, Object(app\controllers\MessegeController))
+#1 /var/www/basic/vendor/yiisoft/yii2/base/Controller.php(378): yii\base\View->render('index', Array, Object(app\controllers\MessegeController))
+#2 /var/www/basic/controllers/MessegeController.php(44): yii\base\Controller->render('index', Array)
+#3 [internal function]: app\controllers\MessegeController->actionIndex()
+#4 /var/www/basic/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#5 /var/www/basic/vendor/yiisoft/yii2/base/Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#6 /var/www/basic/vendor/yiisoft/yii2/base/Module.php(454): yii\base\Controller->runAction('index', Array)
+#7 /var/www/basic/vendor/yiisoft/yii2/web/Application.php(100): yii\base\Module->runAction('messege/index', Array)
+#8 /var/www/basic/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#9 /var/www/basic/web/index.php(12): yii\base\Application->run()
+#10 {main}
+2016-12-29 06:45:29 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'messege/index'
+]
+
+$_COOKIE = [
+    '_csrf' => 'cbda376805a9c6ec66b6a596c61195dafee24b331426e5195cce2c6d6dd6c1f5a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"qFZxm5q2FvapC-ydPZukmAxJkYa6-t-T\";}'
+    'PHPSESSID' => 'cv5nvmddq6bvtgfkcfc0ld21l2'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'apiserver.sv'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => '_csrf=cbda376805a9c6ec66b6a596c61195dafee24b331426e5195cce2c6d6dd6c1f5a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22qFZxm5q2FvapC-ydPZukmAxJkYa6-t-T%22%3B%7D; PHPSESSID=cv5nvmddq6bvtgfkcfc0ld21l2'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Ubuntu) Server at apiserver.sv Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
+    'SERVER_NAME' => 'apiserver.sv'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/basic/web/index.php'
+    'REMOTE_PORT' => '43140'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=messege%2Findex'
+    'REQUEST_URI' => '/basic/web/index.php?r=messege%2Findex'
+    'SCRIPT_NAME' => '/basic/web/index.php'
+    'PHP_SELF' => '/basic/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1482993929.478
+    'REQUEST_TIME' => 1482993929
+]
+2016-12-29 06:46:34 [127.0.0.1][-][-][error][yii\base\ViewNotFoundException] exception 'yii\base\ViewNotFoundException' with message 'The view file does not exist: /var/www/basic/views/messege/index.php' in /var/www/basic/vendor/yiisoft/yii2/base/View.php:227
+Stack trace:
+#0 /var/www/basic/vendor/yiisoft/yii2/base/View.php(150): yii\base\View->renderFile('/var/www/basic/...', Array, Object(app\controllers\MessegeController))
+#1 /var/www/basic/vendor/yiisoft/yii2/base/Controller.php(378): yii\base\View->render('index', Array, Object(app\controllers\MessegeController))
+#2 /var/www/basic/controllers/MessegeController.php(44): yii\base\Controller->render('index', Array)
+#3 [internal function]: app\controllers\MessegeController->actionIndex()
+#4 /var/www/basic/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#5 /var/www/basic/vendor/yiisoft/yii2/base/Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#6 /var/www/basic/vendor/yiisoft/yii2/base/Module.php(454): yii\base\Controller->runAction('index', Array)
+#7 /var/www/basic/vendor/yiisoft/yii2/web/Application.php(100): yii\base\Module->runAction('messege/index', Array)
+#8 /var/www/basic/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#9 /var/www/basic/web/index.php(12): yii\base\Application->run()
+#10 {main}
+2016-12-29 06:46:34 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'messege/index'
+]
+
+$_COOKIE = [
+    '_csrf' => 'cbda376805a9c6ec66b6a596c61195dafee24b331426e5195cce2c6d6dd6c1f5a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"qFZxm5q2FvapC-ydPZukmAxJkYa6-t-T\";}'
+    'PHPSESSID' => 'cv5nvmddq6bvtgfkcfc0ld21l2'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'apiserver.sv'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => '_csrf=cbda376805a9c6ec66b6a596c61195dafee24b331426e5195cce2c6d6dd6c1f5a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22qFZxm5q2FvapC-ydPZukmAxJkYa6-t-T%22%3B%7D; PHPSESSID=cv5nvmddq6bvtgfkcfc0ld21l2'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Ubuntu) Server at apiserver.sv Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
+    'SERVER_NAME' => 'apiserver.sv'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/basic/web/index.php'
+    'REMOTE_PORT' => '43159'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=messege%2Findex'
+    'REQUEST_URI' => '/basic/web/index.php?r=messege%2Findex'
+    'SCRIPT_NAME' => '/basic/web/index.php'
+    'PHP_SELF' => '/basic/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1482993994.237
+    'REQUEST_TIME' => 1482993994
+]
+2016-12-29 07:08:24 [127.0.0.1][-][-][error][yii\base\UnknownPropertyException] exception 'yii\base\UnknownPropertyException' with message 'Setting unknown property: yii\web\UrlManager::enableStringParsing' in /var/www/basic/vendor/yiisoft/yii2/base/Component.php:197
+Stack trace:
+#0 /var/www/basic/vendor/yiisoft/yii2/BaseYii.php(521): yii\base\Component->__set('enableStringPar...', true)
+#1 /var/www/basic/vendor/yiisoft/yii2/base/Object.php(105): yii\BaseYii::configure(Object(yii\web\UrlManager), Array)
+#2 [internal function]: yii\base\Object->__construct(Array)
+#3 /var/www/basic/vendor/yiisoft/yii2/di/Container.php(379): ReflectionClass->newInstanceArgs(Array)
+#4 /var/www/basic/vendor/yiisoft/yii2/di/Container.php(154): yii\di\Container->build('yii\web\UrlMana...', Array, Array)
+#5 /var/www/basic/vendor/yiisoft/yii2/BaseYii.php(344): yii\di\Container->get('yii\web\UrlMana...', Array, Array)
+#6 /var/www/basic/vendor/yiisoft/yii2/di/ServiceLocator.php(133): yii\BaseYii::createObject(Array)
+#7 /var/www/basic/vendor/yiisoft/yii2/base/Application.php(563): yii\di\ServiceLocator->get('urlManager')
+#8 /var/www/basic/vendor/yiisoft/yii2-debug/Module.php(148): yii\base\Application->getUrlManager()
+#9 /var/www/basic/vendor/yiisoft/yii2/base/Application.php(315): yii\debug\Module->bootstrap(Object(yii\web\Application))
+#10 /var/www/basic/vendor/yiisoft/yii2/web/Application.php(67): yii\base\Application->bootstrap()
+#11 /var/www/basic/vendor/yiisoft/yii2/base/Application.php(267): yii\web\Application->bootstrap()
+#12 /var/www/basic/vendor/yiisoft/yii2/base/Object.php(107): yii\base\Application->init()
+#13 /var/www/basic/vendor/yiisoft/yii2/base/Application.php(206): yii\base\Object->__construct(Array)
+#14 /var/www/basic/web/index.php(12): yii\base\Application->__construct(Array)
+#15 {main}
+2016-12-29 07:08:24 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'gii'
+]
+
+$_COOKIE = [
+    '_csrf' => 'cbda376805a9c6ec66b6a596c61195dafee24b331426e5195cce2c6d6dd6c1f5a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"qFZxm5q2FvapC-ydPZukmAxJkYa6-t-T\";}'
+    'PHPSESSID' => '596o66tf692nvs1uu9f6uf3mp4'
+    '_identity' => '220cd327684a90e0bfd949516058f897dc67405cf42c51f65d305389a0716bbfa:2:{i:0;s:9:\"_identity\";i:1;s:28:\"[\"100\",\"test100key\",2592000]\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'apiserver.sv'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => '_csrf=cbda376805a9c6ec66b6a596c61195dafee24b331426e5195cce2c6d6dd6c1f5a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22qFZxm5q2FvapC-ydPZukmAxJkYa6-t-T%22%3B%7D; PHPSESSID=596o66tf692nvs1uu9f6uf3mp4; _identity=220cd327684a90e0bfd949516058f897dc67405cf42c51f65d305389a0716bbfa%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A28%3A%22%5B%22100%22%2C%22test100key%22%2C2592000%5D%22%3B%7D'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Ubuntu) Server at apiserver.sv Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
+    'SERVER_NAME' => 'apiserver.sv'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/basic/web/index.php'
+    'REMOTE_PORT' => '43332'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=gii'
+    'REQUEST_URI' => '/basic/web/index.php?r=gii'
+    'SCRIPT_NAME' => '/basic/web/index.php'
+    'PHP_SELF' => '/basic/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1482995304.389
+    'REQUEST_TIME' => 1482995304
+]
+2016-12-29 07:11:39 [127.0.0.1][-][-][error][yii\base\UnknownPropertyException] exception 'yii\base\UnknownPropertyException' with message 'Setting unknown property: yii\web\UrlRule::0' in /var/www/basic/vendor/yiisoft/yii2/base/Object.php:161
+Stack trace:
+#0 /var/www/basic/vendor/yiisoft/yii2/BaseYii.php(521): yii\base\Object->__set('0', 'Messege')
+#1 /var/www/basic/vendor/yiisoft/yii2/base/Object.php(105): yii\BaseYii::configure(Object(yii\web\UrlRule), Array)
+#2 [internal function]: yii\base\Object->__construct(Array)
+#3 /var/www/basic/vendor/yiisoft/yii2/di/Container.php(379): ReflectionClass->newInstanceArgs(Array)
+#4 /var/www/basic/vendor/yiisoft/yii2/di/Container.php(154): yii\di\Container->build('yii\web\UrlRule', Array, Array)
+#5 /var/www/basic/vendor/yiisoft/yii2/BaseYii.php(344): yii\di\Container->get('yii\web\UrlRule', Array, Array)
+#6 /var/www/basic/vendor/yiisoft/yii2/web/UrlManager.php(242): yii\BaseYii::createObject(Array)
+#7 /var/www/basic/vendor/yiisoft/yii2/web/UrlManager.php(184): yii\web\UrlManager->buildRules(Array)
+#8 /var/www/basic/vendor/yiisoft/yii2/base/Object.php(107): yii\web\UrlManager->init()
+#9 [internal function]: yii\base\Object->__construct(Array)
+#10 /var/www/basic/vendor/yiisoft/yii2/di/Container.php(379): ReflectionClass->newInstanceArgs(Array)
+#11 /var/www/basic/vendor/yiisoft/yii2/di/Container.php(154): yii\di\Container->build('yii\web\UrlMana...', Array, Array)
+#12 /var/www/basic/vendor/yiisoft/yii2/BaseYii.php(344): yii\di\Container->get('yii\web\UrlMana...', Array, Array)
+#13 /var/www/basic/vendor/yiisoft/yii2/di/ServiceLocator.php(133): yii\BaseYii::createObject(Array)
+#14 /var/www/basic/vendor/yiisoft/yii2/base/Application.php(563): yii\di\ServiceLocator->get('urlManager')
+#15 /var/www/basic/vendor/yiisoft/yii2-debug/Module.php(148): yii\base\Application->getUrlManager()
+#16 /var/www/basic/vendor/yiisoft/yii2/base/Application.php(315): yii\debug\Module->bootstrap(Object(yii\web\Application))
+#17 /var/www/basic/vendor/yiisoft/yii2/web/Application.php(67): yii\base\Application->bootstrap()
+#18 /var/www/basic/vendor/yiisoft/yii2/base/Application.php(267): yii\web\Application->bootstrap()
+#19 /var/www/basic/vendor/yiisoft/yii2/base/Object.php(107): yii\base\Application->init()
+#20 /var/www/basic/vendor/yiisoft/yii2/base/Application.php(206): yii\base\Object->__construct(Array)
+#21 /var/www/basic/web/index.php(12): yii\base\Application->__construct(Array)
+#22 {main}
+2016-12-29 07:11:39 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'gii'
+]
+
+$_COOKIE = [
+    '_csrf' => 'cbda376805a9c6ec66b6a596c61195dafee24b331426e5195cce2c6d6dd6c1f5a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"qFZxm5q2FvapC-ydPZukmAxJkYa6-t-T\";}'
+    'PHPSESSID' => '596o66tf692nvs1uu9f6uf3mp4'
+    '_identity' => '220cd327684a90e0bfd949516058f897dc67405cf42c51f65d305389a0716bbfa:2:{i:0;s:9:\"_identity\";i:1;s:28:\"[\"100\",\"test100key\",2592000]\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'apiserver.sv'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => '_csrf=cbda376805a9c6ec66b6a596c61195dafee24b331426e5195cce2c6d6dd6c1f5a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22qFZxm5q2FvapC-ydPZukmAxJkYa6-t-T%22%3B%7D; PHPSESSID=596o66tf692nvs1uu9f6uf3mp4; _identity=220cd327684a90e0bfd949516058f897dc67405cf42c51f65d305389a0716bbfa%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A28%3A%22%5B%22100%22%2C%22test100key%22%2C2592000%5D%22%3B%7D'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Ubuntu) Server at apiserver.sv Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
+    'SERVER_NAME' => 'apiserver.sv'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/basic/web/index.php'
+    'REMOTE_PORT' => '43341'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=gii'
+    'REQUEST_URI' => '/basic/web/index.php?r=gii'
+    'SCRIPT_NAME' => '/basic/web/index.php'
+    'PHP_SELF' => '/basic/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1482995499.415
+    'REQUEST_TIME' => 1482995499
+]
+2016-12-29 07:14:10 [127.0.0.1][-][-][error][yii\base\UnknownPropertyException] exception 'yii\base\UnknownPropertyException' with message 'Setting unknown property: yii\web\UrlRule::0' in /var/www/basic/vendor/yiisoft/yii2/base/Object.php:161
+Stack trace:
+#0 /var/www/basic/vendor/yiisoft/yii2/BaseYii.php(521): yii\base\Object->__set('0', 'Messege')
+#1 /var/www/basic/vendor/yiisoft/yii2/base/Object.php(105): yii\BaseYii::configure(Object(yii\web\UrlRule), Array)
+#2 [internal function]: yii\base\Object->__construct(Array)
+#3 /var/www/basic/vendor/yiisoft/yii2/di/Container.php(379): ReflectionClass->newInstanceArgs(Array)
+#4 /var/www/basic/vendor/yiisoft/yii2/di/Container.php(154): yii\di\Container->build('yii\web\UrlRule', Array, Array)
+#5 /var/www/basic/vendor/yiisoft/yii2/BaseYii.php(344): yii\di\Container->get('yii\web\UrlRule', Array, Array)
+#6 /var/www/basic/vendor/yiisoft/yii2/web/UrlManager.php(242): yii\BaseYii::createObject(Array)
+#7 /var/www/basic/vendor/yiisoft/yii2/web/UrlManager.php(184): yii\web\UrlManager->buildRules(Array)
+#8 /var/www/basic/vendor/yiisoft/yii2/base/Object.php(107): yii\web\UrlManager->init()
+#9 [internal function]: yii\base\Object->__construct(Array)
+#10 /var/www/basic/vendor/yiisoft/yii2/di/Container.php(379): ReflectionClass->newInstanceArgs(Array)
+#11 /var/www/basic/vendor/yiisoft/yii2/di/Container.php(154): yii\di\Container->build('yii\web\UrlMana...', Array, Array)
+#12 /var/www/basic/vendor/yiisoft/yii2/BaseYii.php(344): yii\di\Container->get('yii\web\UrlMana...', Array, Array)
+#13 /var/www/basic/vendor/yiisoft/yii2/di/ServiceLocator.php(133): yii\BaseYii::createObject(Array)
+#14 /var/www/basic/vendor/yiisoft/yii2/base/Application.php(563): yii\di\ServiceLocator->get('urlManager')
+#15 /var/www/basic/vendor/yiisoft/yii2-debug/Module.php(148): yii\base\Application->getUrlManager()
+#16 /var/www/basic/vendor/yiisoft/yii2/base/Application.php(315): yii\debug\Module->bootstrap(Object(yii\web\Application))
+#17 /var/www/basic/vendor/yiisoft/yii2/web/Application.php(67): yii\base\Application->bootstrap()
+#18 /var/www/basic/vendor/yiisoft/yii2/base/Application.php(267): yii\web\Application->bootstrap()
+#19 /var/www/basic/vendor/yiisoft/yii2/base/Object.php(107): yii\base\Application->init()
+#20 /var/www/basic/vendor/yiisoft/yii2/base/Application.php(206): yii\base\Object->__construct(Array)
+#21 /var/www/basic/web/index.php(12): yii\base\Application->__construct(Array)
+#22 {main}
+2016-12-29 07:14:10 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'gii'
+]
+
+$_COOKIE = [
+    '_csrf' => 'cbda376805a9c6ec66b6a596c61195dafee24b331426e5195cce2c6d6dd6c1f5a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"qFZxm5q2FvapC-ydPZukmAxJkYa6-t-T\";}'
+    'PHPSESSID' => '596o66tf692nvs1uu9f6uf3mp4'
+    '_identity' => '220cd327684a90e0bfd949516058f897dc67405cf42c51f65d305389a0716bbfa:2:{i:0;s:9:\"_identity\";i:1;s:28:\"[\"100\",\"test100key\",2592000]\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'apiserver.sv'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => '_csrf=cbda376805a9c6ec66b6a596c61195dafee24b331426e5195cce2c6d6dd6c1f5a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22qFZxm5q2FvapC-ydPZukmAxJkYa6-t-T%22%3B%7D; PHPSESSID=596o66tf692nvs1uu9f6uf3mp4; _identity=220cd327684a90e0bfd949516058f897dc67405cf42c51f65d305389a0716bbfa%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A28%3A%22%5B%22100%22%2C%22test100key%22%2C2592000%5D%22%3B%7D'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Ubuntu) Server at apiserver.sv Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
+    'SERVER_NAME' => 'apiserver.sv'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/basic/web/index.php'
+    'REMOTE_PORT' => '43347'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=gii'
+    'REQUEST_URI' => '/basic/web/index.php?r=gii'
+    'SCRIPT_NAME' => '/basic/web/index.php'
+    'PHP_SELF' => '/basic/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1482995650.466
+    'REQUEST_TIME' => 1482995650
+]
+2016-12-29 07:29:55 [127.0.0.1][100][596o66tf692nvs1uu9f6uf3mp4][warning][yii\caching\FileCache::setValue] Unable to write cache file '/var/www/basic/runtime/cache/96/963454f612a8b5fb4a63ba1e97f028a1.bin': file_put_contents(/var/www/basic/runtime/cache/96/963454f612a8b5fb4a63ba1e97f028a1.bin): failed to open stream: No such file or directory
+2016-12-29 07:29:55 [127.0.0.1][100][596o66tf692nvs1uu9f6uf3mp4][error][yii\web\HttpException:404] exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in /var/www/basic/vendor/yiisoft/yii2/web/Request.php:191
+Stack trace:
+#0 /var/www/basic/vendor/yiisoft/yii2/web/Application.php(80): yii\web\Request->resolve()
+#1 /var/www/basic/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /var/www/basic/web/index.php(12): yii\base\Application->run()
+#3 {main}
+2016-12-29 07:29:55 [127.0.0.1][100][596o66tf692nvs1uu9f6uf3mp4][info][application] $_GET = [
+    'r' => 'gii'
+]
+
+$_COOKIE = [
+    '_csrf' => 'cbda376805a9c6ec66b6a596c61195dafee24b331426e5195cce2c6d6dd6c1f5a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"qFZxm5q2FvapC-ydPZukmAxJkYa6-t-T\";}'
+    'PHPSESSID' => '596o66tf692nvs1uu9f6uf3mp4'
+    '_identity' => '220cd327684a90e0bfd949516058f897dc67405cf42c51f65d305389a0716bbfa:2:{i:0;s:9:\"_identity\";i:1;s:28:\"[\"100\",\"test100key\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__captcha/site/captcha' => 'eagbte'
+    '__captcha/site/captchacount' => 1
+    '__id' => '100'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'apiserver.sv'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => '_csrf=cbda376805a9c6ec66b6a596c61195dafee24b331426e5195cce2c6d6dd6c1f5a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22qFZxm5q2FvapC-ydPZukmAxJkYa6-t-T%22%3B%7D; PHPSESSID=596o66tf692nvs1uu9f6uf3mp4; _identity=220cd327684a90e0bfd949516058f897dc67405cf42c51f65d305389a0716bbfa%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A28%3A%22%5B%22100%22%2C%22test100key%22%2C2592000%5D%22%3B%7D'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Ubuntu) Server at apiserver.sv Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
+    'SERVER_NAME' => 'apiserver.sv'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/basic/web/index.php'
+    'REMOTE_PORT' => '55467'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=gii'
+    'REQUEST_URI' => '/basic/web/index.php?r=gii'
+    'SCRIPT_NAME' => '/basic/web/index.php'
+    'PHP_SELF' => '/basic/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1482996594.874
+    'REQUEST_TIME' => 1482996594
+]
+2016-12-29 07:30:03 [127.0.0.1][100][596o66tf692nvs1uu9f6uf3mp4][warning][yii\caching\FileCache::setValue] Unable to write cache file '/var/www/basic/runtime/cache/96/963454f612a8b5fb4a63ba1e97f028a1.bin': file_put_contents(/var/www/basic/runtime/cache/96/963454f612a8b5fb4a63ba1e97f028a1.bin): failed to open stream: No such file or directory
+2016-12-29 07:30:03 [127.0.0.1][100][596o66tf692nvs1uu9f6uf3mp4][error][yii\web\HttpException:404] exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in /var/www/basic/vendor/yiisoft/yii2/web/Request.php:191
+Stack trace:
+#0 /var/www/basic/vendor/yiisoft/yii2/web/Application.php(80): yii\web\Request->resolve()
+#1 /var/www/basic/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /var/www/basic/web/index.php(12): yii\base\Application->run()
+#3 {main}
+2016-12-29 07:30:03 [127.0.0.1][100][596o66tf692nvs1uu9f6uf3mp4][info][application] $_COOKIE = [
+    '_csrf' => 'cbda376805a9c6ec66b6a596c61195dafee24b331426e5195cce2c6d6dd6c1f5a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"qFZxm5q2FvapC-ydPZukmAxJkYa6-t-T\";}'
+    'PHPSESSID' => '596o66tf692nvs1uu9f6uf3mp4'
+    '_identity' => '220cd327684a90e0bfd949516058f897dc67405cf42c51f65d305389a0716bbfa:2:{i:0;s:9:\"_identity\";i:1;s:28:\"[\"100\",\"test100key\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__captcha/site/captcha' => 'eagbte'
+    '__captcha/site/captchacount' => 1
+    '__id' => '100'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'apiserver.sv'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://apiserver.sv/basic/web/index.php?r=gii'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => '_csrf=cbda376805a9c6ec66b6a596c61195dafee24b331426e5195cce2c6d6dd6c1f5a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22qFZxm5q2FvapC-ydPZukmAxJkYa6-t-T%22%3B%7D; PHPSESSID=596o66tf692nvs1uu9f6uf3mp4; _identity=220cd327684a90e0bfd949516058f897dc67405cf42c51f65d305389a0716bbfa%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A28%3A%22%5B%22100%22%2C%22test100key%22%2C2592000%5D%22%3B%7D'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Ubuntu) Server at apiserver.sv Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
+    'SERVER_NAME' => 'apiserver.sv'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/basic/web/index.php'
+    'REMOTE_PORT' => '55471'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/basic/web/'
+    'SCRIPT_NAME' => '/basic/web/index.php'
+    'PHP_SELF' => '/basic/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1482996603.98
+    'REQUEST_TIME' => 1482996603
+]
+2016-12-29 07:30:06 [127.0.0.1][100][596o66tf692nvs1uu9f6uf3mp4][warning][yii\caching\FileCache::setValue] Unable to write cache file '/var/www/basic/runtime/cache/96/963454f612a8b5fb4a63ba1e97f028a1.bin': file_put_contents(/var/www/basic/runtime/cache/96/963454f612a8b5fb4a63ba1e97f028a1.bin): failed to open stream: No such file or directory
+2016-12-29 07:30:06 [127.0.0.1][100][596o66tf692nvs1uu9f6uf3mp4][error][yii\web\HttpException:404] exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in /var/www/basic/vendor/yiisoft/yii2/web/Request.php:191
+Stack trace:
+#0 /var/www/basic/vendor/yiisoft/yii2/web/Application.php(80): yii\web\Request->resolve()
+#1 /var/www/basic/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /var/www/basic/web/index.php(12): yii\base\Application->run()
+#3 {main}
+2016-12-29 07:30:06 [127.0.0.1][100][596o66tf692nvs1uu9f6uf3mp4][info][application] $_COOKIE = [
+    '_csrf' => 'cbda376805a9c6ec66b6a596c61195dafee24b331426e5195cce2c6d6dd6c1f5a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"qFZxm5q2FvapC-ydPZukmAxJkYa6-t-T\";}'
+    'PHPSESSID' => '596o66tf692nvs1uu9f6uf3mp4'
+    '_identity' => '220cd327684a90e0bfd949516058f897dc67405cf42c51f65d305389a0716bbfa:2:{i:0;s:9:\"_identity\";i:1;s:28:\"[\"100\",\"test100key\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__captcha/site/captcha' => 'eagbte'
+    '__captcha/site/captchacount' => 1
+    '__id' => '100'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'apiserver.sv'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://apiserver.sv/basic/web/'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => '_csrf=cbda376805a9c6ec66b6a596c61195dafee24b331426e5195cce2c6d6dd6c1f5a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22qFZxm5q2FvapC-ydPZukmAxJkYa6-t-T%22%3B%7D; PHPSESSID=596o66tf692nvs1uu9f6uf3mp4; _identity=220cd327684a90e0bfd949516058f897dc67405cf42c51f65d305389a0716bbfa%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A28%3A%22%5B%22100%22%2C%22test100key%22%2C2592000%5D%22%3B%7D'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Ubuntu) Server at apiserver.sv Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
+    'SERVER_NAME' => 'apiserver.sv'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/basic/web/index.php'
+    'REMOTE_PORT' => '55471'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/basic/web/'
+    'SCRIPT_NAME' => '/basic/web/index.php'
+    'PHP_SELF' => '/basic/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1482996606.562
+    'REQUEST_TIME' => 1482996606
+]
+2016-12-29 07:30:11 [127.0.0.1][100][596o66tf692nvs1uu9f6uf3mp4][warning][yii\caching\FileCache::setValue] Unable to write cache file '/var/www/basic/runtime/cache/96/963454f612a8b5fb4a63ba1e97f028a1.bin': file_put_contents(/var/www/basic/runtime/cache/96/963454f612a8b5fb4a63ba1e97f028a1.bin): failed to open stream: No such file or directory
+2016-12-29 07:30:11 [127.0.0.1][100][596o66tf692nvs1uu9f6uf3mp4][error][yii\web\HttpException:404] exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in /var/www/basic/vendor/yiisoft/yii2/web/Request.php:191
+Stack trace:
+#0 /var/www/basic/vendor/yiisoft/yii2/web/Application.php(80): yii\web\Request->resolve()
+#1 /var/www/basic/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /var/www/basic/web/index.php(12): yii\base\Application->run()
+#3 {main}
+2016-12-29 07:30:11 [127.0.0.1][100][596o66tf692nvs1uu9f6uf3mp4][info][application] $_COOKIE = [
+    '_csrf' => 'cbda376805a9c6ec66b6a596c61195dafee24b331426e5195cce2c6d6dd6c1f5a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"qFZxm5q2FvapC-ydPZukmAxJkYa6-t-T\";}'
+    'PHPSESSID' => '596o66tf692nvs1uu9f6uf3mp4'
+    '_identity' => '220cd327684a90e0bfd949516058f897dc67405cf42c51f65d305389a0716bbfa:2:{i:0;s:9:\"_identity\";i:1;s:28:\"[\"100\",\"test100key\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__captcha/site/captcha' => 'eagbte'
+    '__captcha/site/captchacount' => 1
+    '__id' => '100'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'apiserver.sv'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://apiserver.sv/basic/web/'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => '_csrf=cbda376805a9c6ec66b6a596c61195dafee24b331426e5195cce2c6d6dd6c1f5a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22qFZxm5q2FvapC-ydPZukmAxJkYa6-t-T%22%3B%7D; PHPSESSID=596o66tf692nvs1uu9f6uf3mp4; _identity=220cd327684a90e0bfd949516058f897dc67405cf42c51f65d305389a0716bbfa%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A28%3A%22%5B%22100%22%2C%22test100key%22%2C2592000%5D%22%3B%7D'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Ubuntu) Server at apiserver.sv Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
+    'SERVER_NAME' => 'apiserver.sv'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/basic/web/index.php'
+    'REMOTE_PORT' => '55471'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/basic/web/'
+    'SCRIPT_NAME' => '/basic/web/index.php'
+    'PHP_SELF' => '/basic/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1482996611.705
+    'REQUEST_TIME' => 1482996611
+]
+2016-12-29 07:30:56 [127.0.0.1][100][596o66tf692nvs1uu9f6uf3mp4][warning][yii\caching\FileCache::setValue] Unable to write cache file '/var/www/basic/runtime/cache/96/963454f612a8b5fb4a63ba1e97f028a1.bin': file_put_contents(/var/www/basic/runtime/cache/96/963454f612a8b5fb4a63ba1e97f028a1.bin): failed to open stream: No such file or directory
+2016-12-29 07:30:56 [127.0.0.1][100][596o66tf692nvs1uu9f6uf3mp4][error][yii\web\HttpException:404] exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in /var/www/basic/vendor/yiisoft/yii2/web/Request.php:191
+Stack trace:
+#0 /var/www/basic/vendor/yiisoft/yii2/web/Application.php(80): yii\web\Request->resolve()
+#1 /var/www/basic/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /var/www/basic/web/index.php(12): yii\base\Application->run()
+#3 {main}
+2016-12-29 07:30:56 [127.0.0.1][100][596o66tf692nvs1uu9f6uf3mp4][info][application] $_COOKIE = [
+    '_csrf' => 'cbda376805a9c6ec66b6a596c61195dafee24b331426e5195cce2c6d6dd6c1f5a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"qFZxm5q2FvapC-ydPZukmAxJkYa6-t-T\";}'
+    'PHPSESSID' => '596o66tf692nvs1uu9f6uf3mp4'
+    '_identity' => '220cd327684a90e0bfd949516058f897dc67405cf42c51f65d305389a0716bbfa:2:{i:0;s:9:\"_identity\";i:1;s:28:\"[\"100\",\"test100key\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__captcha/site/captcha' => 'eagbte'
+    '__captcha/site/captchacount' => 1
+    '__id' => '100'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'apiserver.sv'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://apiserver.sv/basic/web/'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => '_csrf=cbda376805a9c6ec66b6a596c61195dafee24b331426e5195cce2c6d6dd6c1f5a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22qFZxm5q2FvapC-ydPZukmAxJkYa6-t-T%22%3B%7D; PHPSESSID=596o66tf692nvs1uu9f6uf3mp4; _identity=220cd327684a90e0bfd949516058f897dc67405cf42c51f65d305389a0716bbfa%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A28%3A%22%5B%22100%22%2C%22test100key%22%2C2592000%5D%22%3B%7D'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Ubuntu) Server at apiserver.sv Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
+    'SERVER_NAME' => 'apiserver.sv'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/basic/web/index.php'
+    'REMOTE_PORT' => '55477'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/basic/web/'
+    'SCRIPT_NAME' => '/basic/web/index.php'
+    'PHP_SELF' => '/basic/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1482996656.124
+    'REQUEST_TIME' => 1482996656
+]
+2016-12-29 07:31:01 [127.0.0.1][100][596o66tf692nvs1uu9f6uf3mp4][warning][yii\caching\FileCache::setValue] Unable to write cache file '/var/www/basic/runtime/cache/96/963454f612a8b5fb4a63ba1e97f028a1.bin': file_put_contents(/var/www/basic/runtime/cache/96/963454f612a8b5fb4a63ba1e97f028a1.bin): failed to open stream: No such file or directory
+2016-12-29 07:31:01 [127.0.0.1][100][596o66tf692nvs1uu9f6uf3mp4][error][yii\web\HttpException:404] exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in /var/www/basic/vendor/yiisoft/yii2/web/Request.php:191
+Stack trace:
+#0 /var/www/basic/vendor/yiisoft/yii2/web/Application.php(80): yii\web\Request->resolve()
+#1 /var/www/basic/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /var/www/basic/web/index.php(12): yii\base\Application->run()
+#3 {main}
+2016-12-29 07:31:01 [127.0.0.1][100][596o66tf692nvs1uu9f6uf3mp4][info][application] $_COOKIE = [
+    '_csrf' => 'cbda376805a9c6ec66b6a596c61195dafee24b331426e5195cce2c6d6dd6c1f5a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"qFZxm5q2FvapC-ydPZukmAxJkYa6-t-T\";}'
+    'PHPSESSID' => '596o66tf692nvs1uu9f6uf3mp4'
+    '_identity' => '220cd327684a90e0bfd949516058f897dc67405cf42c51f65d305389a0716bbfa:2:{i:0;s:9:\"_identity\";i:1;s:28:\"[\"100\",\"test100key\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__captcha/site/captcha' => 'eagbte'
+    '__captcha/site/captchacount' => 1
+    '__id' => '100'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'apiserver.sv'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://apiserver.sv/basic/web/'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => '_csrf=cbda376805a9c6ec66b6a596c61195dafee24b331426e5195cce2c6d6dd6c1f5a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22qFZxm5q2FvapC-ydPZukmAxJkYa6-t-T%22%3B%7D; PHPSESSID=596o66tf692nvs1uu9f6uf3mp4; _identity=220cd327684a90e0bfd949516058f897dc67405cf42c51f65d305389a0716bbfa%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A28%3A%22%5B%22100%22%2C%22test100key%22%2C2592000%5D%22%3B%7D'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Ubuntu) Server at apiserver.sv Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
+    'SERVER_NAME' => 'apiserver.sv'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/basic/web/index.php'
+    'REMOTE_PORT' => '55477'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/basic/web/'
+    'SCRIPT_NAME' => '/basic/web/index.php'
+    'PHP_SELF' => '/basic/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1482996661.153
+    'REQUEST_TIME' => 1482996661
+]
+2016-12-29 07:31:04 [127.0.0.1][100][596o66tf692nvs1uu9f6uf3mp4][warning][yii\caching\FileCache::setValue] Unable to write cache file '/var/www/basic/runtime/cache/96/963454f612a8b5fb4a63ba1e97f028a1.bin': file_put_contents(/var/www/basic/runtime/cache/96/963454f612a8b5fb4a63ba1e97f028a1.bin): failed to open stream: No such file or directory
+2016-12-29 07:31:04 [127.0.0.1][100][596o66tf692nvs1uu9f6uf3mp4][error][yii\web\HttpException:404] exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in /var/www/basic/vendor/yiisoft/yii2/web/Request.php:191
+Stack trace:
+#0 /var/www/basic/vendor/yiisoft/yii2/web/Application.php(80): yii\web\Request->resolve()
+#1 /var/www/basic/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /var/www/basic/web/index.php(12): yii\base\Application->run()
+#3 {main}
+2016-12-29 07:31:04 [127.0.0.1][100][596o66tf692nvs1uu9f6uf3mp4][info][application] $_COOKIE = [
+    '_csrf' => 'cbda376805a9c6ec66b6a596c61195dafee24b331426e5195cce2c6d6dd6c1f5a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"qFZxm5q2FvapC-ydPZukmAxJkYa6-t-T\";}'
+    'PHPSESSID' => '596o66tf692nvs1uu9f6uf3mp4'
+    '_identity' => '220cd327684a90e0bfd949516058f897dc67405cf42c51f65d305389a0716bbfa:2:{i:0;s:9:\"_identity\";i:1;s:28:\"[\"100\",\"test100key\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__captcha/site/captcha' => 'eagbte'
+    '__captcha/site/captchacount' => 1
+    '__id' => '100'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'apiserver.sv'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://apiserver.sv/basic/web/'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => '_csrf=cbda376805a9c6ec66b6a596c61195dafee24b331426e5195cce2c6d6dd6c1f5a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22qFZxm5q2FvapC-ydPZukmAxJkYa6-t-T%22%3B%7D; PHPSESSID=596o66tf692nvs1uu9f6uf3mp4; _identity=220cd327684a90e0bfd949516058f897dc67405cf42c51f65d305389a0716bbfa%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A28%3A%22%5B%22100%22%2C%22test100key%22%2C2592000%5D%22%3B%7D'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Ubuntu) Server at apiserver.sv Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
+    'SERVER_NAME' => 'apiserver.sv'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/basic/web/index.php'
+    'REMOTE_PORT' => '55477'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/basic/web/'
+    'SCRIPT_NAME' => '/basic/web/index.php'
+    'PHP_SELF' => '/basic/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1482996664.826
+    'REQUEST_TIME' => 1482996664
+]
+2016-12-29 07:33:03 [127.0.0.1][-][-][error][yii\base\UnknownPropertyException] exception 'yii\base\UnknownPropertyException' with message 'Setting unknown property: yii\web\UrlRule::0' in /var/www/basic/vendor/yiisoft/yii2/base/Object.php:161
+Stack trace:
+#0 /var/www/basic/vendor/yiisoft/yii2/BaseYii.php(521): yii\base\Object->__set('0', 'Messege')
+#1 /var/www/basic/vendor/yiisoft/yii2/base/Object.php(105): yii\BaseYii::configure(Object(yii\web\UrlRule), Array)
+#2 [internal function]: yii\base\Object->__construct(Array)
+#3 /var/www/basic/vendor/yiisoft/yii2/di/Container.php(379): ReflectionClass->newInstanceArgs(Array)
+#4 /var/www/basic/vendor/yiisoft/yii2/di/Container.php(154): yii\di\Container->build('yii\web\UrlRule', Array, Array)
+#5 /var/www/basic/vendor/yiisoft/yii2/BaseYii.php(344): yii\di\Container->get('yii\web\UrlRule', Array, Array)
+#6 /var/www/basic/vendor/yiisoft/yii2/web/UrlManager.php(242): yii\BaseYii::createObject(Array)
+#7 /var/www/basic/vendor/yiisoft/yii2/web/UrlManager.php(184): yii\web\UrlManager->buildRules(Array)
+#8 /var/www/basic/vendor/yiisoft/yii2/base/Object.php(107): yii\web\UrlManager->init()
+#9 [internal function]: yii\base\Object->__construct(Array)
+#10 /var/www/basic/vendor/yiisoft/yii2/di/Container.php(379): ReflectionClass->newInstanceArgs(Array)
+#11 /var/www/basic/vendor/yiisoft/yii2/di/Container.php(154): yii\di\Container->build('yii\web\UrlMana...', Array, Array)
+#12 /var/www/basic/vendor/yiisoft/yii2/BaseYii.php(344): yii\di\Container->get('yii\web\UrlMana...', Array, Array)
+#13 /var/www/basic/vendor/yiisoft/yii2/di/ServiceLocator.php(133): yii\BaseYii::createObject(Array)
+#14 /var/www/basic/vendor/yiisoft/yii2/base/Application.php(563): yii\di\ServiceLocator->get('urlManager')
+#15 /var/www/basic/vendor/yiisoft/yii2-debug/Module.php(148): yii\base\Application->getUrlManager()
+#16 /var/www/basic/vendor/yiisoft/yii2/base/Application.php(315): yii\debug\Module->bootstrap(Object(yii\web\Application))
+#17 /var/www/basic/vendor/yiisoft/yii2/web/Application.php(67): yii\base\Application->bootstrap()
+#18 /var/www/basic/vendor/yiisoft/yii2/base/Application.php(267): yii\web\Application->bootstrap()
+#19 /var/www/basic/vendor/yiisoft/yii2/base/Object.php(107): yii\base\Application->init()
+#20 /var/www/basic/vendor/yiisoft/yii2/base/Application.php(206): yii\base\Object->__construct(Array)
+#21 /var/www/basic/web/index.php(12): yii\base\Application->__construct(Array)
+#22 {main}
+2016-12-29 07:33:03 [127.0.0.1][-][-][info][application] $_COOKIE = [
+    '_csrf' => 'cbda376805a9c6ec66b6a596c61195dafee24b331426e5195cce2c6d6dd6c1f5a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"qFZxm5q2FvapC-ydPZukmAxJkYa6-t-T\";}'
+    'PHPSESSID' => '596o66tf692nvs1uu9f6uf3mp4'
+    '_identity' => '220cd327684a90e0bfd949516058f897dc67405cf42c51f65d305389a0716bbfa:2:{i:0;s:9:\"_identity\";i:1;s:28:\"[\"100\",\"test100key\",2592000]\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'apiserver.sv'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://apiserver.sv/basic/web/'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => '_csrf=cbda376805a9c6ec66b6a596c61195dafee24b331426e5195cce2c6d6dd6c1f5a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22qFZxm5q2FvapC-ydPZukmAxJkYa6-t-T%22%3B%7D; PHPSESSID=596o66tf692nvs1uu9f6uf3mp4; _identity=220cd327684a90e0bfd949516058f897dc67405cf42c51f65d305389a0716bbfa%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A28%3A%22%5B%22100%22%2C%22test100key%22%2C2592000%5D%22%3B%7D'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Ubuntu) Server at apiserver.sv Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
+    'SERVER_NAME' => 'apiserver.sv'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/basic/web/index.php'
+    'REMOTE_PORT' => '55487'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/basic/web/'
+    'SCRIPT_NAME' => '/basic/web/index.php'
+    'PHP_SELF' => '/basic/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1482996783.21
+    'REQUEST_TIME' => 1482996783
+]
+2016-12-29 07:33:27 [127.0.0.1][100][596o66tf692nvs1uu9f6uf3mp4][warning][yii\caching\FileCache::setValue] Unable to write cache file '/var/www/basic/runtime/cache/96/963454f612a8b5fb4a63ba1e97f028a1.bin': file_put_contents(/var/www/basic/runtime/cache/96/963454f612a8b5fb4a63ba1e97f028a1.bin): failed to open stream: No such file or directory
+2016-12-29 07:33:27 [127.0.0.1][100][596o66tf692nvs1uu9f6uf3mp4][error][yii\web\HttpException:404] exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in /var/www/basic/vendor/yiisoft/yii2/web/Request.php:191
+Stack trace:
+#0 /var/www/basic/vendor/yiisoft/yii2/web/Application.php(80): yii\web\Request->resolve()
+#1 /var/www/basic/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /var/www/basic/web/index.php(12): yii\base\Application->run()
+#3 {main}
+2016-12-29 07:33:27 [127.0.0.1][100][596o66tf692nvs1uu9f6uf3mp4][info][application] $_COOKIE = [
+    '_csrf' => 'cbda376805a9c6ec66b6a596c61195dafee24b331426e5195cce2c6d6dd6c1f5a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"qFZxm5q2FvapC-ydPZukmAxJkYa6-t-T\";}'
+    'PHPSESSID' => '596o66tf692nvs1uu9f6uf3mp4'
+    '_identity' => '220cd327684a90e0bfd949516058f897dc67405cf42c51f65d305389a0716bbfa:2:{i:0;s:9:\"_identity\";i:1;s:28:\"[\"100\",\"test100key\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__captcha/site/captcha' => 'eagbte'
+    '__captcha/site/captchacount' => 1
+    '__id' => '100'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'apiserver.sv'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://apiserver.sv/basic/web/'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => '_csrf=cbda376805a9c6ec66b6a596c61195dafee24b331426e5195cce2c6d6dd6c1f5a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22qFZxm5q2FvapC-ydPZukmAxJkYa6-t-T%22%3B%7D; PHPSESSID=596o66tf692nvs1uu9f6uf3mp4; _identity=220cd327684a90e0bfd949516058f897dc67405cf42c51f65d305389a0716bbfa%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A28%3A%22%5B%22100%22%2C%22test100key%22%2C2592000%5D%22%3B%7D'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Ubuntu) Server at apiserver.sv Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
+    'SERVER_NAME' => 'apiserver.sv'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/basic/web/index.php'
+    'REMOTE_PORT' => '55492'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/basic/web/'
+    'SCRIPT_NAME' => '/basic/web/index.php'
+    'PHP_SELF' => '/basic/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1482996807.801
+    'REQUEST_TIME' => 1482996807
+]
+2016-12-29 07:35:53 [127.0.0.1][-][-][error][yii\base\ViewNotFoundException] exception 'yii\base\ViewNotFoundException' with message 'The view file does not exist: /var/www/basic/views/users/index.php' in /var/www/basic/vendor/yiisoft/yii2/base/View.php:227
+Stack trace:
+#0 /var/www/basic/vendor/yiisoft/yii2/base/View.php(150): yii\base\View->renderFile('/var/www/basic/...', Array, Object(app\controllers\UsersController))
+#1 /var/www/basic/vendor/yiisoft/yii2/base/Controller.php(378): yii\base\View->render('index', Array, Object(app\controllers\UsersController))
+#2 /var/www/basic/controllers/UsersController.php(44): yii\base\Controller->render('index', Array)
+#3 [internal function]: app\controllers\UsersController->actionIndex()
+#4 /var/www/basic/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#5 /var/www/basic/vendor/yiisoft/yii2/base/Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#6 /var/www/basic/vendor/yiisoft/yii2/base/Module.php(454): yii\base\Controller->runAction('index', Array)
+#7 /var/www/basic/vendor/yiisoft/yii2/web/Application.php(100): yii\base\Module->runAction('users/index', Array)
+#8 /var/www/basic/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#9 /var/www/basic/web/index.php(12): yii\base\Application->run()
+#10 {main}
+2016-12-29 07:35:52 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'users/index'
+]
+
+$_COOKIE = [
+    '_csrf' => 'cbda376805a9c6ec66b6a596c61195dafee24b331426e5195cce2c6d6dd6c1f5a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"qFZxm5q2FvapC-ydPZukmAxJkYa6-t-T\";}'
+    'PHPSESSID' => 'jb4lmfffg9ll2imp799c3uur01'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'apiserver.sv'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => '_csrf=cbda376805a9c6ec66b6a596c61195dafee24b331426e5195cce2c6d6dd6c1f5a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22qFZxm5q2FvapC-ydPZukmAxJkYa6-t-T%22%3B%7D; PHPSESSID=jb4lmfffg9ll2imp799c3uur01'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Ubuntu) Server at apiserver.sv Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
+    'SERVER_NAME' => 'apiserver.sv'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/basic/web/index.php'
+    'REMOTE_PORT' => '55499'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=users%2Findex'
+    'REQUEST_URI' => '/basic/web/index.php?r=users%2Findex'
+    'SCRIPT_NAME' => '/basic/web/index.php'
+    'PHP_SELF' => '/basic/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1482996952.76
+    'REQUEST_TIME' => 1482996952
+]
+2016-12-29 07:36:28 [127.0.0.1][-][jb4lmfffg9ll2imp799c3uur01][error][yii\web\HttpException:400] exception 'yii\web\BadRequestHttpException' with message 'Missing required parameters: id' in /var/www/basic/vendor/yiisoft/yii2/web/Controller.php:93
+Stack trace:
+#0 /var/www/basic/vendor/yiisoft/yii2/base/InlineAction.php(49): yii\web\Controller->bindActionParams(Object(yii\base\InlineAction), Array)
+#1 /var/www/basic/vendor/yiisoft/yii2/base/Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#2 /var/www/basic/vendor/yiisoft/yii2/base/Module.php(454): yii\base\Controller->runAction('view', Array)
+#3 /var/www/basic/vendor/yiisoft/yii2/web/Application.php(100): yii\base\Module->runAction('users/view', Array)
+#4 /var/www/basic/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#5 /var/www/basic/web/index.php(12): yii\base\Application->run()
+#6 {main}
+2016-12-29 07:36:28 [127.0.0.1][-][jb4lmfffg9ll2imp799c3uur01][info][application] $_GET = [
+    'r' => 'users/view'
+]
+
+$_COOKIE = [
+    '_csrf' => 'cbda376805a9c6ec66b6a596c61195dafee24b331426e5195cce2c6d6dd6c1f5a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"qFZxm5q2FvapC-ydPZukmAxJkYa6-t-T\";}'
+    'PHPSESSID' => 'jb4lmfffg9ll2imp799c3uur01'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'apiserver.sv'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => '_csrf=cbda376805a9c6ec66b6a596c61195dafee24b331426e5195cce2c6d6dd6c1f5a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22qFZxm5q2FvapC-ydPZukmAxJkYa6-t-T%22%3B%7D; PHPSESSID=jb4lmfffg9ll2imp799c3uur01'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Ubuntu) Server at apiserver.sv Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
+    'SERVER_NAME' => 'apiserver.sv'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/basic/web/index.php'
+    'REMOTE_PORT' => '55502'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=users%2Fview'
+    'REQUEST_URI' => '/basic/web/index.php?r=users%2Fview'
+    'SCRIPT_NAME' => '/basic/web/index.php'
+    'PHP_SELF' => '/basic/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1482996988.36
+    'REQUEST_TIME' => 1482996988
+]
+2016-12-29 07:37:25 [127.0.0.1][-][jb4lmfffg9ll2imp799c3uur01][warning][yii\caching\FileCache::setValue] Unable to write cache file '/var/www/basic/runtime/cache/96/963454f612a8b5fb4a63ba1e97f028a1.bin': file_put_contents(/var/www/basic/runtime/cache/96/963454f612a8b5fb4a63ba1e97f028a1.bin): failed to open stream: No such file or directory
+2016-12-29 07:37:25 [127.0.0.1][-][jb4lmfffg9ll2imp799c3uur01][error][yii\web\HttpException:404] exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in /var/www/basic/vendor/yiisoft/yii2/web/Request.php:191
+Stack trace:
+#0 /var/www/basic/vendor/yiisoft/yii2/web/Application.php(80): yii\web\Request->resolve()
+#1 /var/www/basic/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /var/www/basic/web/index.php(12): yii\base\Application->run()
+#3 {main}
+2016-12-29 07:37:25 [127.0.0.1][-][jb4lmfffg9ll2imp799c3uur01][info][application] $_GET = [
+    'r' => 'users/view'
+]
+
+$_COOKIE = [
+    '_csrf' => 'cbda376805a9c6ec66b6a596c61195dafee24b331426e5195cce2c6d6dd6c1f5a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"qFZxm5q2FvapC-ydPZukmAxJkYa6-t-T\";}'
+    'PHPSESSID' => 'jb4lmfffg9ll2imp799c3uur01'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'apiserver.sv'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => '_csrf=cbda376805a9c6ec66b6a596c61195dafee24b331426e5195cce2c6d6dd6c1f5a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22qFZxm5q2FvapC-ydPZukmAxJkYa6-t-T%22%3B%7D; PHPSESSID=jb4lmfffg9ll2imp799c3uur01'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Ubuntu) Server at apiserver.sv Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
+    'SERVER_NAME' => 'apiserver.sv'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/basic/web/index.php'
+    'REMOTE_PORT' => '55505'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=users%2Fview'
+    'REQUEST_URI' => '/basic/web/index.php?r=users%2Fview'
+    'SCRIPT_NAME' => '/basic/web/index.php'
+    'PHP_SELF' => '/basic/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1482997045.583
+    'REQUEST_TIME' => 1482997045
+]
+2016-12-29 07:37:28 [127.0.0.1][-][jb4lmfffg9ll2imp799c3uur01][warning][yii\caching\FileCache::setValue] Unable to write cache file '/var/www/basic/runtime/cache/96/963454f612a8b5fb4a63ba1e97f028a1.bin': file_put_contents(/var/www/basic/runtime/cache/96/963454f612a8b5fb4a63ba1e97f028a1.bin): failed to open stream: No such file or directory
+2016-12-29 07:37:28 [127.0.0.1][-][jb4lmfffg9ll2imp799c3uur01][error][yii\web\HttpException:404] exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in /var/www/basic/vendor/yiisoft/yii2/web/Request.php:191
+Stack trace:
+#0 /var/www/basic/vendor/yiisoft/yii2/web/Application.php(80): yii\web\Request->resolve()
+#1 /var/www/basic/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /var/www/basic/web/index.php(12): yii\base\Application->run()
+#3 {main}
+2016-12-29 07:37:28 [127.0.0.1][-][jb4lmfffg9ll2imp799c3uur01][info][application] $_COOKIE = [
+    '_csrf' => 'cbda376805a9c6ec66b6a596c61195dafee24b331426e5195cce2c6d6dd6c1f5a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"qFZxm5q2FvapC-ydPZukmAxJkYa6-t-T\";}'
+    'PHPSESSID' => 'jb4lmfffg9ll2imp799c3uur01'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'apiserver.sv'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://apiserver.sv/basic/web/index.php?r=users%2Fview'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => '_csrf=cbda376805a9c6ec66b6a596c61195dafee24b331426e5195cce2c6d6dd6c1f5a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22qFZxm5q2FvapC-ydPZukmAxJkYa6-t-T%22%3B%7D; PHPSESSID=jb4lmfffg9ll2imp799c3uur01'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Ubuntu) Server at apiserver.sv Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
+    'SERVER_NAME' => 'apiserver.sv'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/basic/web/index.php'
+    'REMOTE_PORT' => '55505'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/basic/web/'
+    'SCRIPT_NAME' => '/basic/web/index.php'
+    'PHP_SELF' => '/basic/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1482997048.307
+    'REQUEST_TIME' => 1482997048
+]
+2016-12-29 07:37:32 [127.0.0.1][-][jb4lmfffg9ll2imp799c3uur01][warning][yii\caching\FileCache::setValue] Unable to write cache file '/var/www/basic/runtime/cache/96/963454f612a8b5fb4a63ba1e97f028a1.bin': file_put_contents(/var/www/basic/runtime/cache/96/963454f612a8b5fb4a63ba1e97f028a1.bin): failed to open stream: No such file or directory
+2016-12-29 07:37:32 [127.0.0.1][-][jb4lmfffg9ll2imp799c3uur01][error][yii\web\HttpException:404] exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in /var/www/basic/vendor/yiisoft/yii2/web/Request.php:191
+Stack trace:
+#0 /var/www/basic/vendor/yiisoft/yii2/web/Application.php(80): yii\web\Request->resolve()
+#1 /var/www/basic/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /var/www/basic/web/index.php(12): yii\base\Application->run()
+#3 {main}
+2016-12-29 07:37:32 [127.0.0.1][-][jb4lmfffg9ll2imp799c3uur01][info][application] $_COOKIE = [
+    '_csrf' => 'cbda376805a9c6ec66b6a596c61195dafee24b331426e5195cce2c6d6dd6c1f5a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"qFZxm5q2FvapC-ydPZukmAxJkYa6-t-T\";}'
+    'PHPSESSID' => 'jb4lmfffg9ll2imp799c3uur01'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'apiserver.sv'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://apiserver.sv/basic/web/index.php?r=users%2Fview'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => '_csrf=cbda376805a9c6ec66b6a596c61195dafee24b331426e5195cce2c6d6dd6c1f5a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22qFZxm5q2FvapC-ydPZukmAxJkYa6-t-T%22%3B%7D; PHPSESSID=jb4lmfffg9ll2imp799c3uur01'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Ubuntu) Server at apiserver.sv Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
+    'SERVER_NAME' => 'apiserver.sv'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/basic/web/index.php'
+    'REMOTE_PORT' => '55505'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/basic/web/'
+    'SCRIPT_NAME' => '/basic/web/index.php'
+    'PHP_SELF' => '/basic/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1482997052.123
+    'REQUEST_TIME' => 1482997052
+]
+2016-12-29 07:37:41 [127.0.0.1][-][jb4lmfffg9ll2imp799c3uur01][warning][yii\caching\FileCache::setValue] Unable to write cache file '/var/www/basic/runtime/cache/96/963454f612a8b5fb4a63ba1e97f028a1.bin': file_put_contents(/var/www/basic/runtime/cache/96/963454f612a8b5fb4a63ba1e97f028a1.bin): failed to open stream: No such file or directory
+2016-12-29 07:37:41 [127.0.0.1][-][jb4lmfffg9ll2imp799c3uur01][error][yii\web\HttpException:404] exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in /var/www/basic/vendor/yiisoft/yii2/web/Request.php:191
+Stack trace:
+#0 /var/www/basic/vendor/yiisoft/yii2/web/Application.php(80): yii\web\Request->resolve()
+#1 /var/www/basic/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /var/www/basic/web/index.php(12): yii\base\Application->run()
+#3 {main}
+2016-12-29 07:37:41 [127.0.0.1][-][jb4lmfffg9ll2imp799c3uur01][info][application] $_COOKIE = [
+    '_csrf' => 'cbda376805a9c6ec66b6a596c61195dafee24b331426e5195cce2c6d6dd6c1f5a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"qFZxm5q2FvapC-ydPZukmAxJkYa6-t-T\";}'
+    'PHPSESSID' => 'jb4lmfffg9ll2imp799c3uur01'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'apiserver.sv'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://apiserver.sv/basic/web/index.php?r=users%2Fview'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => '_csrf=cbda376805a9c6ec66b6a596c61195dafee24b331426e5195cce2c6d6dd6c1f5a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22qFZxm5q2FvapC-ydPZukmAxJkYa6-t-T%22%3B%7D; PHPSESSID=jb4lmfffg9ll2imp799c3uur01'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Ubuntu) Server at apiserver.sv Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
+    'SERVER_NAME' => 'apiserver.sv'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/basic/web/index.php'
+    'REMOTE_PORT' => '55510'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/basic/web/'
+    'SCRIPT_NAME' => '/basic/web/index.php'
+    'PHP_SELF' => '/basic/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1482997061.031
+    'REQUEST_TIME' => 1482997061
+]
+2016-12-29 07:37:42 [127.0.0.1][-][jb4lmfffg9ll2imp799c3uur01][warning][yii\caching\FileCache::setValue] Unable to write cache file '/var/www/basic/runtime/cache/96/963454f612a8b5fb4a63ba1e97f028a1.bin': file_put_contents(/var/www/basic/runtime/cache/96/963454f612a8b5fb4a63ba1e97f028a1.bin): failed to open stream: No such file or directory
+2016-12-29 07:37:42 [127.0.0.1][-][jb4lmfffg9ll2imp799c3uur01][error][yii\web\HttpException:404] exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in /var/www/basic/vendor/yiisoft/yii2/web/Request.php:191
+Stack trace:
+#0 /var/www/basic/vendor/yiisoft/yii2/web/Application.php(80): yii\web\Request->resolve()
+#1 /var/www/basic/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /var/www/basic/web/index.php(12): yii\base\Application->run()
+#3 {main}
+2016-12-29 07:37:42 [127.0.0.1][-][jb4lmfffg9ll2imp799c3uur01][info][application] $_COOKIE = [
+    '_csrf' => 'cbda376805a9c6ec66b6a596c61195dafee24b331426e5195cce2c6d6dd6c1f5a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"qFZxm5q2FvapC-ydPZukmAxJkYa6-t-T\";}'
+    'PHPSESSID' => 'jb4lmfffg9ll2imp799c3uur01'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'apiserver.sv'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://apiserver.sv/basic/web/'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => '_csrf=cbda376805a9c6ec66b6a596c61195dafee24b331426e5195cce2c6d6dd6c1f5a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22qFZxm5q2FvapC-ydPZukmAxJkYa6-t-T%22%3B%7D; PHPSESSID=jb4lmfffg9ll2imp799c3uur01'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Ubuntu) Server at apiserver.sv Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
+    'SERVER_NAME' => 'apiserver.sv'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/basic/web/index.php'
+    'REMOTE_PORT' => '55510'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/basic/web/'
+    'SCRIPT_NAME' => '/basic/web/index.php'
+    'PHP_SELF' => '/basic/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1482997062.374
+    'REQUEST_TIME' => 1482997062
+]
+2016-12-29 07:37:45 [127.0.0.1][-][jb4lmfffg9ll2imp799c3uur01][warning][yii\caching\FileCache::setValue] Unable to write cache file '/var/www/basic/runtime/cache/96/963454f612a8b5fb4a63ba1e97f028a1.bin': file_put_contents(/var/www/basic/runtime/cache/96/963454f612a8b5fb4a63ba1e97f028a1.bin): failed to open stream: No such file or directory
+2016-12-29 07:37:45 [127.0.0.1][-][jb4lmfffg9ll2imp799c3uur01][error][yii\web\HttpException:404] exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in /var/www/basic/vendor/yiisoft/yii2/web/Request.php:191
+Stack trace:
+#0 /var/www/basic/vendor/yiisoft/yii2/web/Application.php(80): yii\web\Request->resolve()
+#1 /var/www/basic/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /var/www/basic/web/index.php(12): yii\base\Application->run()
+#3 {main}
+2016-12-29 07:37:45 [127.0.0.1][-][jb4lmfffg9ll2imp799c3uur01][info][application] $_COOKIE = [
+    '_csrf' => 'cbda376805a9c6ec66b6a596c61195dafee24b331426e5195cce2c6d6dd6c1f5a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"qFZxm5q2FvapC-ydPZukmAxJkYa6-t-T\";}'
+    'PHPSESSID' => 'jb4lmfffg9ll2imp799c3uur01'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'apiserver.sv'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://apiserver.sv/basic/web/'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => '_csrf=cbda376805a9c6ec66b6a596c61195dafee24b331426e5195cce2c6d6dd6c1f5a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22qFZxm5q2FvapC-ydPZukmAxJkYa6-t-T%22%3B%7D; PHPSESSID=jb4lmfffg9ll2imp799c3uur01'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Ubuntu) Server at apiserver.sv Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
+    'SERVER_NAME' => 'apiserver.sv'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/basic/web/index.php'
+    'REMOTE_PORT' => '55510'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/basic/web/'
+    'SCRIPT_NAME' => '/basic/web/index.php'
+    'PHP_SELF' => '/basic/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1482997065.506
+    'REQUEST_TIME' => 1482997065
+]
+2016-12-29 07:38:21 [127.0.0.1][-][jb4lmfffg9ll2imp799c3uur01][warning][yii\caching\FileCache::setValue] Unable to write cache file '/var/www/basic/runtime/cache/96/963454f612a8b5fb4a63ba1e97f028a1.bin': file_put_contents(/var/www/basic/runtime/cache/96/963454f612a8b5fb4a63ba1e97f028a1.bin): failed to open stream: No such file or directory
+2016-12-29 07:38:21 [127.0.0.1][-][jb4lmfffg9ll2imp799c3uur01][error][yii\web\HttpException:404] exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in /var/www/basic/vendor/yiisoft/yii2/web/Request.php:191
+Stack trace:
+#0 /var/www/basic/vendor/yiisoft/yii2/web/Application.php(80): yii\web\Request->resolve()
+#1 /var/www/basic/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /var/www/basic/web/index.php(12): yii\base\Application->run()
+#3 {main}
+2016-12-29 07:38:21 [127.0.0.1][-][jb4lmfffg9ll2imp799c3uur01][info][application] $_COOKIE = [
+    '_csrf' => 'cbda376805a9c6ec66b6a596c61195dafee24b331426e5195cce2c6d6dd6c1f5a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"qFZxm5q2FvapC-ydPZukmAxJkYa6-t-T\";}'
+    'PHPSESSID' => 'jb4lmfffg9ll2imp799c3uur01'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'apiserver.sv'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://apiserver.sv/basic/web/'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => '_csrf=cbda376805a9c6ec66b6a596c61195dafee24b331426e5195cce2c6d6dd6c1f5a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22qFZxm5q2FvapC-ydPZukmAxJkYa6-t-T%22%3B%7D; PHPSESSID=jb4lmfffg9ll2imp799c3uur01'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Ubuntu) Server at apiserver.sv Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
+    'SERVER_NAME' => 'apiserver.sv'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/basic/web/index.php'
+    'REMOTE_PORT' => '55516'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/basic/web/'
+    'SCRIPT_NAME' => '/basic/web/index.php'
+    'PHP_SELF' => '/basic/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1482997101.666
+    'REQUEST_TIME' => 1482997101
+]
+2016-12-29 07:41:50 [127.0.0.1][-][-][error][yii\base\ViewNotFoundException] exception 'yii\base\ViewNotFoundException' with message 'The view file does not exist: /var/www/basic/views/messege/index.php' in /var/www/basic/vendor/yiisoft/yii2/base/View.php:227
+Stack trace:
+#0 /var/www/basic/vendor/yiisoft/yii2/base/View.php(150): yii\base\View->renderFile('/var/www/basic/...', Array, Object(app\controllers\MessegeController))
+#1 /var/www/basic/vendor/yiisoft/yii2/base/Controller.php(378): yii\base\View->render('index', Array, Object(app\controllers\MessegeController))
+#2 /var/www/basic/controllers/MessegeController.php(44): yii\base\Controller->render('index', Array)
+#3 [internal function]: app\controllers\MessegeController->actionIndex()
+#4 /var/www/basic/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#5 /var/www/basic/vendor/yiisoft/yii2/base/Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#6 /var/www/basic/vendor/yiisoft/yii2/base/Module.php(454): yii\base\Controller->runAction('index', Array)
+#7 /var/www/basic/vendor/yiisoft/yii2/web/Application.php(100): yii\base\Module->runAction('messege/index', Array)
+#8 /var/www/basic/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#9 /var/www/basic/web/index.php(12): yii\base\Application->run()
+#10 {main}
+2016-12-29 07:41:50 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'messege/index'
+]
+
+$_COOKIE = [
+    '_csrf' => 'cbda376805a9c6ec66b6a596c61195dafee24b331426e5195cce2c6d6dd6c1f5a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"qFZxm5q2FvapC-ydPZukmAxJkYa6-t-T\";}'
+    'PHPSESSID' => 'jb4lmfffg9ll2imp799c3uur01'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'apiserver.sv'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => '_csrf=cbda376805a9c6ec66b6a596c61195dafee24b331426e5195cce2c6d6dd6c1f5a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22qFZxm5q2FvapC-ydPZukmAxJkYa6-t-T%22%3B%7D; PHPSESSID=jb4lmfffg9ll2imp799c3uur01'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Ubuntu) Server at apiserver.sv Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
+    'SERVER_NAME' => 'apiserver.sv'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/basic/web/index.php'
+    'REMOTE_PORT' => '55525'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=messege%2Findex'
+    'REQUEST_URI' => '/basic/web/index.php?r=messege%2Findex'
+    'SCRIPT_NAME' => '/basic/web/index.php'
+    'PHP_SELF' => '/basic/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1482997310.236
+    'REQUEST_TIME' => 1482997310
+]
+2016-12-29 07:42:09 [127.0.0.1][-][jb4lmfffg9ll2imp799c3uur01][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "Users/index".' in /var/www/basic/vendor/yiisoft/yii2/base/Module.php:462
+Stack trace:
+#0 /var/www/basic/vendor/yiisoft/yii2/web/Application.php(100): yii\base\Module->runAction('Users/index', Array)
+#1 /var/www/basic/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /var/www/basic/web/index.php(12): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in /var/www/basic/vendor/yiisoft/yii2/web/Application.php:112
+Stack trace:
+#0 /var/www/basic/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /var/www/basic/web/index.php(12): yii\base\Application->run()
+#2 {main}
+2016-12-29 07:42:09 [127.0.0.1][-][jb4lmfffg9ll2imp799c3uur01][info][application] $_GET = [
+    'r' => 'Users/index'
+]
+
+$_COOKIE = [
+    '_csrf' => 'cbda376805a9c6ec66b6a596c61195dafee24b331426e5195cce2c6d6dd6c1f5a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"qFZxm5q2FvapC-ydPZukmAxJkYa6-t-T\";}'
+    'PHPSESSID' => 'jb4lmfffg9ll2imp799c3uur01'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__captcha/site/captcha' => 'vijhdtg'
+    '__captcha/site/captchacount' => 1
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'apiserver.sv'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => '_csrf=cbda376805a9c6ec66b6a596c61195dafee24b331426e5195cce2c6d6dd6c1f5a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22qFZxm5q2FvapC-ydPZukmAxJkYa6-t-T%22%3B%7D; PHPSESSID=jb4lmfffg9ll2imp799c3uur01'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Ubuntu) Server at apiserver.sv Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
+    'SERVER_NAME' => 'apiserver.sv'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/basic/web/index.php'
+    'REMOTE_PORT' => '55528'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=Users%2Findex'
+    'REQUEST_URI' => '/basic/web/index.php?r=Users%2Findex'
+    'SCRIPT_NAME' => '/basic/web/index.php'
+    'PHP_SELF' => '/basic/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1482997329.516
+    'REQUEST_TIME' => 1482997329
+]
+2016-12-29 07:42:19 [127.0.0.1][-][-][error][yii\base\ViewNotFoundException] exception 'yii\base\ViewNotFoundException' with message 'The view file does not exist: /var/www/basic/views/users/index.php' in /var/www/basic/vendor/yiisoft/yii2/base/View.php:227
+Stack trace:
+#0 /var/www/basic/vendor/yiisoft/yii2/base/View.php(150): yii\base\View->renderFile('/var/www/basic/...', Array, Object(app\controllers\UsersController))
+#1 /var/www/basic/vendor/yiisoft/yii2/base/Controller.php(378): yii\base\View->render('index', Array, Object(app\controllers\UsersController))
+#2 /var/www/basic/controllers/UsersController.php(44): yii\base\Controller->render('index', Array)
+#3 [internal function]: app\controllers\UsersController->actionIndex()
+#4 /var/www/basic/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#5 /var/www/basic/vendor/yiisoft/yii2/base/Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#6 /var/www/basic/vendor/yiisoft/yii2/base/Module.php(454): yii\base\Controller->runAction('index', Array)
+#7 /var/www/basic/vendor/yiisoft/yii2/web/Application.php(100): yii\base\Module->runAction('users/index', Array)
+#8 /var/www/basic/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#9 /var/www/basic/web/index.php(12): yii\base\Application->run()
+#10 {main}
+2016-12-29 07:42:19 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'users/index'
+]
+
+$_COOKIE = [
+    '_csrf' => 'cbda376805a9c6ec66b6a596c61195dafee24b331426e5195cce2c6d6dd6c1f5a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"qFZxm5q2FvapC-ydPZukmAxJkYa6-t-T\";}'
+    'PHPSESSID' => 'jb4lmfffg9ll2imp799c3uur01'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'apiserver.sv'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => '_csrf=cbda376805a9c6ec66b6a596c61195dafee24b331426e5195cce2c6d6dd6c1f5a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22qFZxm5q2FvapC-ydPZukmAxJkYa6-t-T%22%3B%7D; PHPSESSID=jb4lmfffg9ll2imp799c3uur01'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Ubuntu) Server at apiserver.sv Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
+    'SERVER_NAME' => 'apiserver.sv'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/basic/web/index.php'
+    'REMOTE_PORT' => '55531'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=users%2Findex'
+    'REQUEST_URI' => '/basic/web/index.php?r=users%2Findex'
+    'SCRIPT_NAME' => '/basic/web/index.php'
+    'PHP_SELF' => '/basic/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1482997339.686
+    'REQUEST_TIME' => 1482997339
+]
+2016-12-29 07:42:30 [127.0.0.1][-][jb4lmfffg9ll2imp799c3uur01][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "Users/index".' in /var/www/basic/vendor/yiisoft/yii2/base/Module.php:462
+Stack trace:
+#0 /var/www/basic/vendor/yiisoft/yii2/web/Application.php(100): yii\base\Module->runAction('Users/index', Array)
+#1 /var/www/basic/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /var/www/basic/web/index.php(12): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in /var/www/basic/vendor/yiisoft/yii2/web/Application.php:112
+Stack trace:
+#0 /var/www/basic/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /var/www/basic/web/index.php(12): yii\base\Application->run()
+#2 {main}
+2016-12-29 07:42:30 [127.0.0.1][-][jb4lmfffg9ll2imp799c3uur01][info][application] $_GET = [
+    'r' => 'Users/index'
+]
+
+$_COOKIE = [
+    '_csrf' => 'cbda376805a9c6ec66b6a596c61195dafee24b331426e5195cce2c6d6dd6c1f5a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"qFZxm5q2FvapC-ydPZukmAxJkYa6-t-T\";}'
+    'PHPSESSID' => 'jb4lmfffg9ll2imp799c3uur01'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__captcha/site/captcha' => 'vijhdtg'
+    '__captcha/site/captchacount' => 1
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'apiserver.sv'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => '_csrf=cbda376805a9c6ec66b6a596c61195dafee24b331426e5195cce2c6d6dd6c1f5a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22qFZxm5q2FvapC-ydPZukmAxJkYa6-t-T%22%3B%7D; PHPSESSID=jb4lmfffg9ll2imp799c3uur01'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Ubuntu) Server at apiserver.sv Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
+    'SERVER_NAME' => 'apiserver.sv'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/basic/web/index.php'
+    'REMOTE_PORT' => '55536'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=Users%2Findex'
+    'REQUEST_URI' => '/basic/web/index.php?r=Users%2Findex'
+    'SCRIPT_NAME' => '/basic/web/index.php'
+    'PHP_SELF' => '/basic/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1482997350.439
+    'REQUEST_TIME' => 1482997350
+]
+2016-12-29 07:46:08 [127.0.0.1][-][-][error][yii\base\ViewNotFoundException] exception 'yii\base\ViewNotFoundException' with message 'The view file does not exist: /var/www/basic/views/messege/index.php' in /var/www/basic/vendor/yiisoft/yii2/base/View.php:227
+Stack trace:
+#0 /var/www/basic/vendor/yiisoft/yii2/base/View.php(150): yii\base\View->renderFile('/var/www/basic/...', Array, Object(app\controllers\MessegeController))
+#1 /var/www/basic/vendor/yiisoft/yii2/base/Controller.php(378): yii\base\View->render('index', Array, Object(app\controllers\MessegeController))
+#2 /var/www/basic/controllers/MessegeController.php(44): yii\base\Controller->render('index', Array)
+#3 [internal function]: app\controllers\MessegeController->actionIndex()
+#4 /var/www/basic/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#5 /var/www/basic/vendor/yiisoft/yii2/base/Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#6 /var/www/basic/vendor/yiisoft/yii2/base/Module.php(454): yii\base\Controller->runAction('index', Array)
+#7 /var/www/basic/vendor/yiisoft/yii2/web/Application.php(100): yii\base\Module->runAction('messege/index', Array)
+#8 /var/www/basic/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#9 /var/www/basic/web/index.php(12): yii\base\Application->run()
+#10 {main}
+2016-12-29 07:46:08 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'messege/index'
+]
+
+$_COOKIE = [
+    '_csrf' => 'cbda376805a9c6ec66b6a596c61195dafee24b331426e5195cce2c6d6dd6c1f5a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"qFZxm5q2FvapC-ydPZukmAxJkYa6-t-T\";}'
+    'PHPSESSID' => 'jb4lmfffg9ll2imp799c3uur01'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'apiserver.sv'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => '_csrf=cbda376805a9c6ec66b6a596c61195dafee24b331426e5195cce2c6d6dd6c1f5a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22qFZxm5q2FvapC-ydPZukmAxJkYa6-t-T%22%3B%7D; PHPSESSID=jb4lmfffg9ll2imp799c3uur01'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Ubuntu) Server at apiserver.sv Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
+    'SERVER_NAME' => 'apiserver.sv'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/basic/web/index.php'
+    'REMOTE_PORT' => '55602'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=messege%2Findex'
+    'REQUEST_URI' => '/basic/web/index.php?r=messege%2Findex'
+    'SCRIPT_NAME' => '/basic/web/index.php'
+    'PHP_SELF' => '/basic/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1482997568.953
+    'REQUEST_TIME' => 1482997568
+]
+2016-12-29 07:46:22 [127.0.0.1][-][jb4lmfffg9ll2imp799c3uur01][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "Users/index".' in /var/www/basic/vendor/yiisoft/yii2/base/Module.php:462
+Stack trace:
+#0 /var/www/basic/vendor/yiisoft/yii2/web/Application.php(100): yii\base\Module->runAction('Users/index', Array)
+#1 /var/www/basic/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /var/www/basic/web/index.php(12): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in /var/www/basic/vendor/yiisoft/yii2/web/Application.php:112
+Stack trace:
+#0 /var/www/basic/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /var/www/basic/web/index.php(12): yii\base\Application->run()
+#2 {main}
+2016-12-29 07:46:22 [127.0.0.1][-][jb4lmfffg9ll2imp799c3uur01][info][application] $_GET = [
+    'r' => 'Users/index'
+]
+
+$_COOKIE = [
+    '_csrf' => 'cbda376805a9c6ec66b6a596c61195dafee24b331426e5195cce2c6d6dd6c1f5a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"qFZxm5q2FvapC-ydPZukmAxJkYa6-t-T\";}'
+    'PHPSESSID' => 'jb4lmfffg9ll2imp799c3uur01'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__captcha/site/captcha' => 'vijhdtg'
+    '__captcha/site/captchacount' => 1
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'apiserver.sv'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => '_csrf=cbda376805a9c6ec66b6a596c61195dafee24b331426e5195cce2c6d6dd6c1f5a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22qFZxm5q2FvapC-ydPZukmAxJkYa6-t-T%22%3B%7D; PHPSESSID=jb4lmfffg9ll2imp799c3uur01'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Ubuntu) Server at apiserver.sv Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
+    'SERVER_NAME' => 'apiserver.sv'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/basic/web/index.php'
+    'REMOTE_PORT' => '55606'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=Users%2Findex'
+    'REQUEST_URI' => '/basic/web/index.php?r=Users%2Findex'
+    'SCRIPT_NAME' => '/basic/web/index.php'
+    'PHP_SELF' => '/basic/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1482997582.389
+    'REQUEST_TIME' => 1482997582
+]
+2016-12-29 07:46:30 [127.0.0.1][-][-][error][yii\base\ViewNotFoundException] exception 'yii\base\ViewNotFoundException' with message 'The view file does not exist: /var/www/basic/views/users/index.php' in /var/www/basic/vendor/yiisoft/yii2/base/View.php:227
+Stack trace:
+#0 /var/www/basic/vendor/yiisoft/yii2/base/View.php(150): yii\base\View->renderFile('/var/www/basic/...', Array, Object(app\controllers\UsersController))
+#1 /var/www/basic/vendor/yiisoft/yii2/base/Controller.php(378): yii\base\View->render('index', Array, Object(app\controllers\UsersController))
+#2 /var/www/basic/controllers/UsersController.php(44): yii\base\Controller->render('index', Array)
+#3 [internal function]: app\controllers\UsersController->actionIndex()
+#4 /var/www/basic/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#5 /var/www/basic/vendor/yiisoft/yii2/base/Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#6 /var/www/basic/vendor/yiisoft/yii2/base/Module.php(454): yii\base\Controller->runAction('index', Array)
+#7 /var/www/basic/vendor/yiisoft/yii2/web/Application.php(100): yii\base\Module->runAction('users/index', Array)
+#8 /var/www/basic/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#9 /var/www/basic/web/index.php(12): yii\base\Application->run()
+#10 {main}
+2016-12-29 07:46:30 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'users/index'
+]
+
+$_COOKIE = [
+    '_csrf' => 'cbda376805a9c6ec66b6a596c61195dafee24b331426e5195cce2c6d6dd6c1f5a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"qFZxm5q2FvapC-ydPZukmAxJkYa6-t-T\";}'
+    'PHPSESSID' => 'jb4lmfffg9ll2imp799c3uur01'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'apiserver.sv'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => '_csrf=cbda376805a9c6ec66b6a596c61195dafee24b331426e5195cce2c6d6dd6c1f5a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22qFZxm5q2FvapC-ydPZukmAxJkYa6-t-T%22%3B%7D; PHPSESSID=jb4lmfffg9ll2imp799c3uur01'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Ubuntu) Server at apiserver.sv Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
+    'SERVER_NAME' => 'apiserver.sv'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/basic/web/index.php'
+    'REMOTE_PORT' => '55608'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=users%2Findex'
+    'REQUEST_URI' => '/basic/web/index.php?r=users%2Findex'
+    'SCRIPT_NAME' => '/basic/web/index.php'
+    'PHP_SELF' => '/basic/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1482997590.558
+    'REQUEST_TIME' => 1482997590
+]
+2016-12-29 08:07:20 [127.0.0.1][-][-][error][yii\base\UnknownPropertyException] exception 'yii\base\UnknownPropertyException' with message 'Getting unknown property: app\models\MessegeSearch::id' in /var/www/basic/vendor/yiisoft/yii2/base/Component.php:143
+Stack trace:
+#0 /var/www/basic/vendor/yiisoft/yii2/db/BaseActiveRecord.php(286): yii\base\Component->__get('id')
+#1 /var/www/basic/vendor/yiisoft/yii2/validators/Validator.php(262): yii\db\BaseActiveRecord->__get('id')
+#2 /var/www/basic/vendor/yiisoft/yii2/base/Model.php(356): yii\validators\Validator->validateAttributes(Object(app\models\MessegeSearch), Array)
+#3 /var/www/basic/models/MessegeSearch.php(54): yii\base\Model->validate()
+#4 /var/www/basic/controllers/MessegeController.php(39): app\models\MessegeSearch->search(Array)
+#5 [internal function]: app\controllers\MessegeController->actionIndex()
+#6 /var/www/basic/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#7 /var/www/basic/vendor/yiisoft/yii2/base/Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#8 /var/www/basic/vendor/yiisoft/yii2/base/Module.php(454): yii\base\Controller->runAction('index', Array)
+#9 /var/www/basic/vendor/yiisoft/yii2/web/Application.php(100): yii\base\Module->runAction('messege/index', Array)
+#10 /var/www/basic/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#11 /var/www/basic/web/index.php(12): yii\base\Application->run()
+#12 {main}
+2016-12-29 08:07:20 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'messege/index'
+]
+
+$_COOKIE = [
+    '_csrf' => 'cbda376805a9c6ec66b6a596c61195dafee24b331426e5195cce2c6d6dd6c1f5a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"qFZxm5q2FvapC-ydPZukmAxJkYa6-t-T\";}'
+    'PHPSESSID' => 'jb4lmfffg9ll2imp799c3uur01'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'apiserver.sv'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => '_csrf=cbda376805a9c6ec66b6a596c61195dafee24b331426e5195cce2c6d6dd6c1f5a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22qFZxm5q2FvapC-ydPZukmAxJkYa6-t-T%22%3B%7D; PHPSESSID=jb4lmfffg9ll2imp799c3uur01'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Ubuntu) Server at apiserver.sv Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
+    'SERVER_NAME' => 'apiserver.sv'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/basic/web/index.php'
+    'REMOTE_PORT' => '55766'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=messege%2Findex'
+    'REQUEST_URI' => '/basic/web/index.php?r=messege%2Findex'
+    'SCRIPT_NAME' => '/basic/web/index.php'
+    'PHP_SELF' => '/basic/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1482998840.837
+    'REQUEST_TIME' => 1482998840
+]
+2016-12-29 08:11:51 [-][-][-][error][yii\db\Exception] exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1142 DROP command denied to user 'APIdb'@'localhost' for table 'conv'' in /var/www/basic/vendor/yiisoft/yii2/db/Command.php:844
+Stack trace:
+#0 /var/www/basic/vendor/yiisoft/yii2/db/Command.php(844): PDOStatement->execute()
+#1 /var/www/basic/vendor/yiisoft/yii2/db/Migration.php(291): yii\db\Command->execute()
+#2 /var/www/basic/migrations/m161229_022835_create_conv_table.php(28): yii\db\Migration->dropTable('conv')
+#3 /var/www/basic/vendor/yiisoft/yii2/console/controllers/BaseMigrateController.php(679): m161229_022835_create_conv_table->down()
+#4 /var/www/basic/vendor/yiisoft/yii2/console/controllers/BaseMigrateController.php(285): yii\console\controllers\BaseMigrateController->migrateDown('m161229_022835_...')
+#5 [internal function]: yii\console\controllers\BaseMigrateController->actionRedo('3')
+#6 /var/www/basic/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#7 /var/www/basic/vendor/yiisoft/yii2/base/Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#8 /var/www/basic/vendor/yiisoft/yii2/console/Controller.php(128): yii\base\Controller->runAction('redo', Array)
+#9 /var/www/basic/vendor/yiisoft/yii2/base/Module.php(454): yii\console\Controller->runAction('redo', Array)
+#10 /var/www/basic/vendor/yiisoft/yii2/console/Application.php(180): yii\base\Module->runAction('migrate/redo', Array)
+#11 /var/www/basic/vendor/yiisoft/yii2/console/Application.php(147): yii\console\Application->runAction('migrate/redo', Array)
+#12 /var/www/basic/vendor/yiisoft/yii2/base/Application.php(375): yii\console\Application->handleRequest(Object(yii\console\Request))
+#13 /var/www/basic/yii(20): yii\base\Application->run()
+#14 {main}
+
+Next exception 'yii\db\Exception' with message 'SQLSTATE[42000]: Syntax error or access violation: 1142 DROP command denied to user 'APIdb'@'localhost' for table 'conv'
+The SQL being executed was: DROP TABLE `conv`' in /var/www/basic/vendor/yiisoft/yii2/db/Schema.php:631
+Stack trace:
+#0 /var/www/basic/vendor/yiisoft/yii2/db/Command.php(854): yii\db\Schema->convertException(Object(PDOException), 'DROP TABLE `con...')
+#1 /var/www/basic/vendor/yiisoft/yii2/db/Migration.php(291): yii\db\Command->execute()
+#2 /var/www/basic/migrations/m161229_022835_create_conv_table.php(28): yii\db\Migration->dropTable('conv')
+#3 /var/www/basic/vendor/yiisoft/yii2/console/controllers/BaseMigrateController.php(679): m161229_022835_create_conv_table->down()
+#4 /var/www/basic/vendor/yiisoft/yii2/console/controllers/BaseMigrateController.php(285): yii\console\controllers\BaseMigrateController->migrateDown('m161229_022835_...')
+#5 [internal function]: yii\console\controllers\BaseMigrateController->actionRedo('3')
+#6 /var/www/basic/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#7 /var/www/basic/vendor/yiisoft/yii2/base/Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#8 /var/www/basic/vendor/yiisoft/yii2/console/Controller.php(128): yii\base\Controller->runAction('redo', Array)
+#9 /var/www/basic/vendor/yiisoft/yii2/base/Module.php(454): yii\console\Controller->runAction('redo', Array)
+#10 /var/www/basic/vendor/yiisoft/yii2/console/Application.php(180): yii\base\Module->runAction('migrate/redo', Array)
+#11 /var/www/basic/vendor/yiisoft/yii2/console/Application.php(147): yii\console\Application->runAction('migrate/redo', Array)
+#12 /var/www/basic/vendor/yiisoft/yii2/base/Application.php(375): yii\console\Application->handleRequest(Object(yii\console\Request))
+#13 /var/www/basic/yii(20): yii\base\Application->run()
+#14 {main}
+Additional Information:
+Array
+(
+    [0] => 42000
+    [1] => 1142
+    [2] => DROP command denied to user 'APIdb'@'localhost' for table 'conv'
+)
+
+2016-12-29 08:11:48 [-][-][-][info][application] $_SERVER = [
+    'LC_PAPER' => 'ru_UA.UTF-8'
+    'LC_ADDRESS' => 'ru_UA.UTF-8'
+    'LC_MONETARY' => 'ru_UA.UTF-8'
+    'TERM' => 'xterm'
+    'LC_NUMERIC' => 'ru_UA.UTF-8'
+    'LS_COLORS' => 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arj=01;31:*.taz=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.zip=01;31:*.z=01;31:*.Z=01;31:*.dz=01;31:*.gz=01;31:*.lz=01;31:*.xz=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.jpg=01;35:*.jpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.axv=01;35:*.anx=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.axa=00;36:*.oga=00;36:*.spx=00;36:*.xspf=00;36:'
+    'LC_TELEPHONE' => 'ru_UA.UTF-8'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin'
+    'LC_IDENTIFICATION' => 'ru_UA.UTF-8'
+    'LANG' => 'ru_UA.UTF-8'
+    'LC_MEASUREMENT' => 'ru_UA.UTF-8'
+    'HOME' => '/root'
+    'LANGUAGE' => 'ru_UA:ru'
+    'DISPLAY' => ':0'
+    'LC_TIME' => 'ru_UA.UTF-8'
+    'XAUTHORITY' => '/home/stain/.Xauthority'
+    'LC_NAME' => 'ru_UA.UTF-8'
+    'COLORTERM' => 'gnome-terminal'
+    'SHELL' => '/bin/bash'
+    'MAIL' => '/var/mail/root'
+    'LOGNAME' => 'root'
+    'USER' => 'root'
+    'USERNAME' => 'root'
+    'SUDO_COMMAND' => '/usr/bin/php yii migrate/redo 3'
+    'SUDO_USER' => 'root'
+    'SUDO_UID' => '0'
+    'SUDO_GID' => '0'
+    'PHP_SELF' => 'yii'
+    'SCRIPT_NAME' => 'yii'
+    'SCRIPT_FILENAME' => 'yii'
+    'PATH_TRANSLATED' => 'yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1482999108.6236
+    'REQUEST_TIME' => 1482999108
+    'argv' => [
+        0 => 'yii'
+        1 => 'migrate/redo'
+        2 => '3'
+    ]
+    'argc' => 3
+]
